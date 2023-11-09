@@ -34,15 +34,27 @@ const YourApp = ({navigation}) => {
         }}
       />
       <Button
-        title="跳转到Page2"
+        title="跳转到Sqlite"
         onPress={() => {
           navigation.navigate('Page2');
         }}
       />
       <Button
-        title="跳转到Page3"
+        title="跳转到Rematch"
         onPress={() => {
           navigation.navigate('Page3');
+        }}
+      />
+      <Button
+        title="跳转到Style"
+        onPress={() => {
+          navigation.navigate('Page4');
+        }}
+      />
+      <Button
+        title="跳转到Lottie"
+        onPress={() => {
+          navigation.navigate('Page5');
         }}
       />
     </View>

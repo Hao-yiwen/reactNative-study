@@ -6,6 +6,8 @@ import Page1 from './View/Page1';
 import Page2 from './View/Page2';
 import store from './Store/store';
 import Page3 from './View/Page3';
+import Page4 from './View/Page4';
+import Page5 from './View/Page5';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +30,16 @@ function App() {
             name="Page3"
             component={Page3}
             options={{title: 'Page3'}}
+          />
+          <Stack.Screen
+            name="Page4"
+            component={Page4}
+            options={{title: 'Style'}}
+          />
+          <Stack.Screen
+            name="Page5"
+            component={Page5}
+            options={{title: 'Lottie'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
