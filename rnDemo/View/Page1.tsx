@@ -57,6 +57,18 @@ const YourApp = ({navigation}) => {
           navigation.navigate('Page5');
         }}
       />
+      <Button
+        title="跳转到Image"
+        onPress={() => {
+          navigation.navigate('Page6');
+        }}
+      />
+      <Button
+        title="跳转到Carousel"
+        onPress={() => {
+          navigation.navigate('Page7');
+        }}
+      />
     </View>
   );
 };
