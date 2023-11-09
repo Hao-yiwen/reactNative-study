@@ -2,14 +2,15 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Provider} from 'react-redux';
-import Page1 from './View/Page1';
-import Page2 from './View/Page2';
-import store from './Store/store';
-import Page3 from './View/Page3';
-import Page4 from './View/Page4';
-import Page5 from './View/Page5';
-import Page6 from './View/Page6';
-import Page7 from './View/Page7';
+import store from '@src/Store/store';
+import Page1 from '@src/View/Page1';
+import Page2 from '@src/View/Page2';
+import Page3 from '@src/View/Page3';
+import Page4 from '@src/View/Page4';
+import Page5 from '@src/View/Page5';
+import Page6 from '@src/View/Page6';
+import Page7 from '@src/View/Page7';
+import Animate from '@src/View/Animate';
 
 const Stack = createNativeStackNavigator();
 
@@ -52,6 +53,11 @@ function App() {
             name="Page7"
             component={Page7}
             options={{title: 'Page7'}}
+          />
+          <Stack.Screen
+            name="Animate"
+            component={Animate}
+            options={{title: 'Animate'}}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -1,3 +1,4 @@
+// Image, Video, ImageBackground
 import React from 'react';
 import {View, Image, Text, ScrollView, ImageBackground} from 'react-native';
 import Video from 'react-native-video';

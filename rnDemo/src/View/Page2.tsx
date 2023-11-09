@@ -1,3 +1,4 @@
+// split3
 import React, {useRef, useEffect} from 'react';
 import {Text, View, Button} from 'react-native';
 // @ts-ignore

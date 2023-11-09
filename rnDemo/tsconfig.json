@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".", // 如果你的 tsconfig.json 在项目根目录下
     "paths": {
-      "@assets/*": ["Assets/*"]
+      "@assets/*": ["src/Assets/*"],
+      "@src/*": ["src/*"],
+      "@view": ["src/View"],
       // 其他别名...
     }
     // 其他配置...
