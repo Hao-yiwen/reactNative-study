@@ -9,6 +9,7 @@ import Page3 from './View/Page3';
 import Page4 from './View/Page4';
 import Page5 from './View/Page5';
 import Page6 from './View/Page6';
+import Page7 from './View/Page7';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +47,11 @@ function App() {
             name="Page6"
             component={Page6}
             options={{title: 'Image'}}
+          />
+          <Stack.Screen
+            name="Page7"
+            component={Page7}
+            options={{title: 'Page7'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
