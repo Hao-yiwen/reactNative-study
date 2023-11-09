@@ -5,9 +5,11 @@ module.exports = {
     [
       'module-resolver',
       {
-        root: ['./'], // 你的源代码目录
+        root: ['./src'], // 你的源代码目录
         alias: {
-          '@assets': './Assets',
+          '@assets': './src/Assets',
+          '@src': './src',
+          '@Views': './src/Views',
           // 其他别名...
         },
       },

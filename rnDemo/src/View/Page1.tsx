@@ -1,3 +1,4 @@
+// HomePage
 import React from 'react';
 import {Text, View, Button} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -67,6 +68,12 @@ const YourApp = ({navigation}) => {
         title="跳转到Carousel"
         onPress={() => {
           navigation.navigate('Page7');
+        }}
+      />
+      <Button
+        title="跳转到Animate"
+        onPress={() => {
+          navigation.navigate('Animate');
         }}
       />
     </View>
