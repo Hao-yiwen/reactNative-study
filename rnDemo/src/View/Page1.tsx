@@ -76,6 +76,12 @@ const YourApp = ({navigation}: any) => {
           navigation.navigate('Animate');
         }}
       />
+      <Button
+        title="跳转到Timer"
+        onPress={() => {
+          navigation.navigate('Timer');
+        }}
+      />
     </View>
   );
 };

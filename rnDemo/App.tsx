@@ -11,6 +11,7 @@ import Page5 from '@src/View/Page5';
 import Page6 from '@src/View/Page6';
 import Page7 from '@src/View/Page7';
 import Animate from '@src/View/Animate';
+import Timer from '@src/View/Timer';
 
 const Stack = createNativeStackNavigator();
 
@@ -58,6 +59,11 @@ function App() {
             name="Animate"
             component={Animate}
             options={{title: 'Animate'}}
+          />
+          <Stack.Screen
+            name="Timer"
+            component={Timer}
+            options={{title: 'Timer'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
