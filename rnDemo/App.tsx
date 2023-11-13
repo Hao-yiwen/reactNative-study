@@ -12,6 +12,7 @@ import Page6 from '@src/View/Page6';
 import Page7 from '@src/View/Page7';
 import Animate from '@src/View/Animate';
 import Timer from '@src/View/Timer';
+import NativeModules from '@src/View/NativeModules';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,51 +21,16 @@ function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
-            name="Page1"
-            component={Page1}
-            options={{title: 'Overview'}}
-          />
-          <Stack.Screen
-            name="Page2"
-            component={Page2}
-            options={{title: 'Page2'}}
-          />
-          <Stack.Screen
-            name="Page3"
-            component={Page3}
-            options={{title: 'Page3'}}
-          />
-          <Stack.Screen
-            name="Page4"
-            component={Page4}
-            options={{title: 'Style'}}
-          />
-          <Stack.Screen
-            name="Page5"
-            component={Page5}
-            options={{title: 'Lottie'}}
-          />
-          <Stack.Screen
-            name="Page6"
-            component={Page6}
-            options={{title: 'Image'}}
-          />
-          <Stack.Screen
-            name="Page7"
-            component={Page7}
-            options={{title: 'Page7'}}
-          />
-          <Stack.Screen
-            name="Animate"
-            component={Animate}
-            options={{title: 'Animate'}}
-          />
-          <Stack.Screen
-            name="Timer"
-            component={Timer}
-            options={{title: 'Timer'}}
-          />
+          <Stack.Screen name="Page1" component={Page1} options={{title: 'Overview'}} />
+          <Stack.Screen name="Page2" component={Page2} options={{title: 'Page2'}} />
+          <Stack.Screen name="Page3" component={Page3} options={{title: 'Page3'}} />
+          <Stack.Screen name="Page4" component={Page4} options={{title: 'Style'}} />
+          <Stack.Screen name="Page5" component={Page5} options={{title: 'Lottie'}} />
+          <Stack.Screen name="Page6" component={Page6} options={{title: 'Image'}} />
+          <Stack.Screen name="Page7" component={Page7} options={{title: 'Page7'}} />
+          <Stack.Screen name="Animate" component={Animate} options={{title: 'Animate'}} />
+          <Stack.Screen name="Timer" component={Timer} options={{title: 'Timer'}} />
+          <Stack.Screen name="NativeModules" component={NativeModules} options={{title: 'NativeModules'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

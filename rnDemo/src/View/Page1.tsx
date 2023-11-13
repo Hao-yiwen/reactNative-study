@@ -1,9 +1,14 @@
 // HomePage
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Text, View, Button} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const YourApp = ({navigation}: any) => {
+  useEffect(() => {
+    const isHermes = () => !!global.HermesInternal;
+    console.log(isHermes());
+  }, []);
+
   return (
     <View
       // eslint-disable-next-line react-native/no-inline-styles
@@ -80,6 +85,12 @@ const YourApp = ({navigation}: any) => {
         title="跳转到Timer"
         onPress={() => {
           navigation.navigate('Timer');
+        }}
+      />
+      <Button
+        title="跳转到NativeModules"
+        onPress={() => {
+          navigation.navigate('NativeModules');
         }}
       />
     </View>
