@@ -7,5 +7,6 @@
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
-@interface RCTCalendarModule: RCTEventEmitter <RCTBridgeModule>
+
+@interface CalendarModule: RCTEventEmitter <RCTBridgeModule>
 @end

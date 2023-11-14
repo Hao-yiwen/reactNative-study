@@ -34,6 +34,7 @@
 		39B051922AFCD5980007234F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B0517F2AFCD5980007234F /* SimpleLineIcons.ttf */; };
 		39B051932AFCD5980007234F /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051802AFCD5980007234F /* FontAwesome6_Brands.ttf */; };
 		39B051942AFCD5980007234F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051812AFCD5980007234F /* MaterialIcons.ttf */; };
+		39FDF50D2B03A74900D2C031 /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF50C2B03A74900D2C031 /* SwiftModule.swift */; };
 		7699B88040F8A987B510C191 /* libPods-rnDemo-rnDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnDemo-rnDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F6CB855D2B00D8E40041889D /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */; };
@@ -86,6 +87,8 @@
 		39B0517F2AFCD5980007234F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		39B051802AFCD5980007234F /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		39B051812AFCD5980007234F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		39FDF50B2B03A74800D2C031 /* rnDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rnDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		39FDF50C2B03A74900D2C031 /* SwiftModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo.debug.xcconfig"; path = "Target Support Files/Pods-rnDemo/Pods-rnDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo.release.xcconfig"; path = "Target Support Files/Pods-rnDemo/Pods-rnDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnDemo-rnDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo-rnDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-rnDemo-rnDemoTests/Pods-rnDemo-rnDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,8 +148,6 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				395F0E3F2B0357F000ED7E37 /* Bridge */,
-				F6CB855B2B00D86C0041889D /* RCTCalendarModule.h */,
-				F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */,
 			);
 			name = rnDemo;
 			sourceTree = "<group>";
@@ -164,6 +165,8 @@
 		395F0E3F2B0357F000ED7E37 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				39FDF50A2B03A72B00D2C031 /* SwiftModule */,
+				39FDF5092B03949800D2C031 /* Calendar */,
 				395F0E412B03581600ED7E37 /* DatePicker */,
 				395F0E402B03580900ED7E37 /* Map */,
 			);
@@ -215,6 +218,24 @@
 			);
 			name = Fonts;
 			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		39FDF5092B03949800D2C031 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB855B2B00D86C0041889D /* RCTCalendarModule.h */,
+				F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		39FDF50A2B03A72B00D2C031 /* SwiftModule */ = {
+			isa = PBXGroup;
+			children = (
+				39FDF50C2B03A74900D2C031 /* SwiftModule.swift */,
+				39FDF50B2B03A74800D2C031 /* rnDemo-Bridging-Header.h */,
+			);
+			path = SwiftModule;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -318,7 +339,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -545,6 +566,7 @@
 			files = (
 				395F0E452B03587A00ED7E37 /* RCTDatePickerManager.m in Sources */,
 				395F0E3E2B03419900ED7E37 /* RNTMapView.m in Sources */,
+				39FDF50D2B03A74900D2C031 /* SwiftModule.swift in Sources */,
 				F6CB855D2B00D8E40041889D /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				395F0E392B0210B100ED7E37 /* RNTMapManager.m in Sources */,
@@ -567,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-rnDemo-rnDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -594,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-rnDemo-rnDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rnDemoTests/Info.plist;
@@ -635,6 +659,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge/SwiftModule/rnDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -661,6 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge/SwiftModule/rnDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

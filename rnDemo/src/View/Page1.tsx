@@ -1,6 +1,6 @@
 // HomePage
 import React, {useEffect} from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, View, Button, ScrollView} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const YourApp = ({navigation}: any) => {
@@ -10,9 +10,9 @@ const YourApp = ({navigation}: any) => {
   }, []);
 
   return (
-    <View
+    <ScrollView
       // eslint-disable-next-line react-native/no-inline-styles
-      style={{
+      contentContainerStyle={{
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
@@ -88,6 +88,12 @@ const YourApp = ({navigation}: any) => {
         }}
       />
       <Button
+        title="跳转到NativeModules"
+        onPress={() => {
+          navigation.navigate('NativeModules');
+        }}
+      />
+      <Button
         title="跳转到MapView"
         onPress={() => {
           navigation.navigate('MapView');
@@ -99,7 +105,13 @@ const YourApp = ({navigation}: any) => {
           navigation.navigate('DatePicker');
         }}
       />
-    </View>
+      <Button
+        title="跳转到SwiftModule"
+        onPress={() => {
+          navigation.navigate('SwiftModule');
+        }}
+      />
+    </ScrollView>
   );
 };
 
