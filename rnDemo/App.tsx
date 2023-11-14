@@ -14,6 +14,7 @@ import Animate from '@src/View/Animate';
 import Timer from '@src/View/Timer';
 import MapView from './src/View/MapView';
 import DatePicker from '@src/View/DatePicker';
+import NativeModules from '@src/View/NativeModules';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,7 @@ function App() {
           <Stack.Screen name="Timer" component={Timer} options={{title: 'Timer'}} />
           <Stack.Screen name="MapView" component={MapView} options={{title: 'MapView'}} />
           <Stack.Screen name="DatePicker" component={DatePicker} options={{title: 'DatePicker'}} />
+          <Stack.Screen name="NativeModules" component={NativeModules} options={{title: 'NativeModules'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
