@@ -88,9 +88,15 @@ const YourApp = ({navigation}: any) => {
         }}
       />
       <Button
-        title="跳转到NativeModules"
+        title="跳转到MapView"
         onPress={() => {
-          navigation.navigate('NativeModules');
+          navigation.navigate('MapView');
+        }}
+      />
+      <Button
+        title="跳转到DatePicker"
+        onPress={() => {
+          navigation.navigate('DatePicker');
         }}
       />
     </View>

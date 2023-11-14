@@ -12,6 +12,8 @@ import Page6 from '@src/View/Page6';
 import Page7 from '@src/View/Page7';
 import Animate from '@src/View/Animate';
 import Timer from '@src/View/Timer';
+import MapView from './src/View/MapView';
+import DatePicker from '@src/View/DatePicker';
 import NativeModules from '@src/View/NativeModules';
 
 const Stack = createNativeStackNavigator();
@@ -30,6 +32,8 @@ function App() {
           <Stack.Screen name="Page7" component={Page7} options={{title: 'Page7'}} />
           <Stack.Screen name="Animate" component={Animate} options={{title: 'Animate'}} />
           <Stack.Screen name="Timer" component={Timer} options={{title: 'Timer'}} />
+          <Stack.Screen name="MapView" component={MapView} options={{title: 'MapView'}} />
+          <Stack.Screen name="DatePicker" component={DatePicker} options={{title: 'DatePicker'}} />
           <Stack.Screen name="NativeModules" component={NativeModules} options={{title: 'NativeModules'}} />
         </Stack.Navigator>
       </NavigationContainer>
