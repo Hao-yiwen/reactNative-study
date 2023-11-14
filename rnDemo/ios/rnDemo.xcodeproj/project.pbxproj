@@ -12,6 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		395F0E392B0210B100ED7E37 /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F0E382B0210B100ED7E37 /* RNTMapManager.m */; };
+		395F0E3E2B03419900ED7E37 /* RNTMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F0E3D2B03419900ED7E37 /* RNTMapView.m */; };
+		395F0E452B03587A00ED7E37 /* RCTDatePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F0E442B03587A00ED7E37 /* RCTDatePickerManager.m */; };
 		39B051822AFCD5980007234F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B0516F2AFCD5980007234F /* Fontisto.ttf */; };
 		39B051832AFCD5980007234F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051702AFCD5980007234F /* Octicons.ttf */; };
 		39B051842AFCD5980007234F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051712AFCD5980007234F /* Feather.ttf */; };
@@ -56,6 +59,12 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnDemo/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnDemo-rnDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnDemo-rnDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		395F0E382B0210B100ED7E37 /* RNTMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
+		395F0E3B2B03309100ED7E37 /* RCTConvert+Mapkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+Mapkit.h"; sourceTree = "<group>"; };
+		395F0E3C2B033FD800ED7E37 /* RNTMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapView.h; sourceTree = "<group>"; };
+		395F0E3D2B03419900ED7E37 /* RNTMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTMapView.m; sourceTree = "<group>"; };
+		395F0E432B03584400ED7E37 /* RCTDatePickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDatePickerManager.h; sourceTree = "<group>"; };
+		395F0E442B03587A00ED7E37 /* RCTDatePickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDatePickerManager.m; sourceTree = "<group>"; };
 		39B0516F2AFCD5980007234F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		39B051702AFCD5980007234F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		39B051712AFCD5980007234F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -131,6 +140,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				395F0E3F2B0357F000ED7E37 /* Bridge */,
 			);
 			name = rnDemo;
 			sourceTree = "<group>";
@@ -143,6 +153,35 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnDemo-rnDemoTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		395F0E3F2B0357F000ED7E37 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				395F0E412B03581600ED7E37 /* DatePicker */,
+				395F0E402B03580900ED7E37 /* Map */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		395F0E402B03580900ED7E37 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				395F0E382B0210B100ED7E37 /* RNTMapManager.m */,
+				395F0E3B2B03309100ED7E37 /* RCTConvert+Mapkit.h */,
+				395F0E3C2B033FD800ED7E37 /* RNTMapView.h */,
+				395F0E3D2B03419900ED7E37 /* RNTMapView.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		395F0E412B03581600ED7E37 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				395F0E432B03584400ED7E37 /* RCTDatePickerManager.h */,
+				395F0E442B03587A00ED7E37 /* RCTDatePickerManager.m */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		39B0516E2AFCD5980007234F /* Fonts */ = {
@@ -497,7 +536,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395F0E452B03587A00ED7E37 /* RCTDatePickerManager.m in Sources */,
+				395F0E3E2B03419900ED7E37 /* RNTMapView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				395F0E392B0210B100ED7E37 /* RNTMapManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

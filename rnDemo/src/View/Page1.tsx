@@ -82,6 +82,18 @@ const YourApp = ({navigation}: any) => {
           navigation.navigate('Timer');
         }}
       />
+      <Button
+        title="跳转到MapView"
+        onPress={() => {
+          navigation.navigate('MapView');
+        }}
+      />
+      <Button
+        title="跳转到DatePicker"
+        onPress={() => {
+          navigation.navigate('DatePicker');
+        }}
+      />
     </View>
   );
 };
