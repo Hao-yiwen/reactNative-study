@@ -11,7 +11,7 @@ export default () => {
         title="点击获取"
         onPress={() => {
           console.log('SwiftModule', SwiftModule.someKey);
-          SwiftModule.getHelloMessage(console.log);
+          SwiftModule.addEvent('lemo', 'ledu', 10);
         }}
       />
     </View>
