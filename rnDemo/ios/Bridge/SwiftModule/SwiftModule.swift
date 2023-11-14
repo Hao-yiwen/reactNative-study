@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import React
 
 @objc(SwiftModule)
-class SwiftModule: NSObject, RCTBridgeModule {
+class SwiftModule: NSObject {
   static func moduleName() -> String! {
     return "SwiftModule"
   }
@@ -21,7 +20,8 @@ class SwiftModule: NSObject, RCTBridgeModule {
  }
   
   @objc
-  func getHelloMessage(_ callback: RCTResponseSenderBlock){
-    callback(["hello from swift"])
+  func addEvent(_ name: String, location: String, date: NSNumber) -> Void {
+     // Date is ready to use!
+    print(name + location + date.stringValue + "哈哈哈哈");
   }
 }

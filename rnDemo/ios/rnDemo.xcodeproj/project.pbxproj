@@ -37,6 +37,7 @@
 		39FDF50D2B03A74900D2C031 /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF50C2B03A74900D2C031 /* SwiftModule.swift */; };
 		7699B88040F8A987B510C191 /* libPods-rnDemo-rnDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnDemo-rnDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F68E6E5A2B03B70100DFEA32 /* SwiftModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F68E6E592B03B70100DFEA32 /* SwiftModuleBridge.m */; };
 		F6CB855D2B00D8E40041889D /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */; };
 		F6CB855E2B00D8E40041889D /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnDemo-rnDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo-rnDemoTests.release.xcconfig"; path = "Target Support Files/Pods-rnDemo-rnDemoTests/Pods-rnDemo-rnDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F68E6E592B03B70100DFEA32 /* SwiftModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftModuleBridge.m; sourceTree = "<group>"; };
 		F6CB855B2B00D86C0041889D /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		F6CB855C2B00D8E40041889D /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +236,7 @@
 			children = (
 				39FDF50C2B03A74900D2C031 /* SwiftModule.swift */,
 				39FDF50B2B03A74800D2C031 /* rnDemo-Bridging-Header.h */,
+				F68E6E592B03B70100DFEA32 /* SwiftModuleBridge.m */,
 			);
 			path = SwiftModule;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				F6CB855D2B00D8E40041889D /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				395F0E392B0210B100ED7E37 /* RNTMapManager.m in Sources */,
+				F68E6E5A2B03B70100DFEA32 /* SwiftModuleBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
