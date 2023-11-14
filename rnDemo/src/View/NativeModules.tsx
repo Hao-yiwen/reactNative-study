@@ -1,17 +1,24 @@
-import React from 'react';
-import {View, Text, Button} from 'react-native';
-import CalendarModuleFoo from './bridge/CalendarModule';
+import React, {useEffect} from 'react';
+import {View, Text, Button, NativeEventEmitter, NativeModules} from 'react-native';
+
+const {CalendarModule} = NativeModules;
+const calendarModuleEventEmitter = new NativeEventEmitter(CalendarModule);
+// import CalendarModuleFoo from './bridge/CalendarModule';
 
 export default () => {
+  useEffect(() => {
+    const eventListener = calendarModuleEventEmitter.addListener('EventCreated', event => {
+      console.log(`Event Created: title=${event.title}, location=${event.location}`);
+    });
+
+    return () => {
+      eventListener.remove();
+    };
+  });
+
   const onPress = () => {
-    CalendarModuleFoo.createCalendarEvent('testName', 'testLocation')
-      .then(eventId => {
-        console.log(eventId, '???');
-      })
-      .catch(error => {
-        console.log(error);
-      });
-    console.log(CalendarModuleFoo.DEFAULT_EVENT_NAME, CalendarModuleFoo.SOME_OTHER_CONSTANT, 'CONSTANT');
+    CalendarModule.createCalendarEvent('testName', 'testLocation');
+    console.log(CalendarModule.DEFAULT_EVENT_NAME, CalendarModule.SOME_OTHER_CONSTANT, 'CONSTANT');
   };
 
   return (
