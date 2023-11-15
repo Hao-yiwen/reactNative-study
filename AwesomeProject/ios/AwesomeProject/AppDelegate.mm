@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <RTNCalculatorSpec/RTNCalculatorSpec.h>
 
 @implementation AppDelegate
 

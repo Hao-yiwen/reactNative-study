@@ -13,7 +13,8 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.72.7",
-    "rtn-calculator": "../RTNCalculator"
+    "rtn-calculator": "../RTNCalculator",
+    "rtn-centered-text": "../RTNCenteredText"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
