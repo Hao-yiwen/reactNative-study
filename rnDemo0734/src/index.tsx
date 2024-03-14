@@ -6,7 +6,7 @@
  */
 
 import React, {useCallback, useEffect} from 'react';
-import {NativeEventEmitter, NativeModules} from 'react-native';
+import {Image, NativeEventEmitter, NativeModules} from 'react-native';
 import {
   Alert,
   DeviceEventEmitter,
@@ -22,11 +22,13 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import CalendarModules from './native/CalendarModules';
+import ImagePickerModule from './native/ImagePickerModule';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
 function App(): React.JSX.Element {
+  const [imageUri, setImageUri] = React.useState<string>('');
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -93,6 +95,12 @@ function App(): React.JSX.Element {
     }
   }, []);
 
+  const handleChooseImage = useCallback(async () => {
+    const uri = await ImagePickerModule.pickImage();
+    console.log(`uri: ${uri}`);
+    setImageUri(uri);
+  }, []);
+
   const handleCreateEvent = useCallback(() => {
     CalendarModules.createEvent('testName');
   }, []);
@@ -104,6 +112,9 @@ function App(): React.JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <View style={styles.pageContainer}>
+        {imageUri && (
+          <Image source={{uri: imageUri}} width={200} height={200} />
+        )}
         <Text style={{color: 'yellow'}}>hello android</Text>
         <Pressable onPress={handlePress} style={styles.pressContainer}>
           <Text>createCalendarEvent</Text>
@@ -121,6 +132,9 @@ function App(): React.JSX.Element {
         </Pressable>
         <Pressable onPress={handleCreateEvent} style={styles.pressContainer}>
           <Text>createEvent</Text>
+        </Pressable>
+        <Pressable onPress={handleChooseImage} style={styles.pressContainer}>
+          <Text>chooseImage</Text>
         </Pressable>
       </View>
     </SafeAreaView>
