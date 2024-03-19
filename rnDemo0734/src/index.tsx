@@ -1,155 +1,73 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, {useState} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import {GestureHandlerRootView, ScrollView} from 'react-native-gesture-handler';
 
-import React, {useCallback, useEffect} from 'react';
-import {Image, NativeEventEmitter, NativeModules} from 'react-native';
-import {
-  Alert,
-  DeviceEventEmitter,
-  Dimensions,
-  Pressable,
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import CalendarModules from './native/CalendarModules';
-import ImagePickerModule from './native/ImagePickerModule';
-
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
-
-function App(): React.JSX.Element {
-  const [imageUri, setImageUri] = React.useState<string>('');
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  useEffect(() => {
-    // const eventEmitter = DeviceEventEmitter.addListener(
-    //   'EventReminder',
-    //   params => {
-    //     console.log('EventReminder received,' + JSON.stringify(params));
-    //   },
-    // );
-    const eventEmitter = new NativeEventEmitter(NativeModules.CalendarModule);
-    let eventListener = eventEmitter.addListener('EventReminder', params => {
-      console.log('EventReminder received,' + JSON.stringify(params));
-    });
-    return () => {
-      eventListener.remove();
-    };
-  }, []);
-
-  const handlePress = useCallback(() => {
-    console.log('Pressable pressed');
-    CalendarModules.createCalendarEvent(
-      'testName',
-      'testLocation',
-      (error, eventId) => {
-        if (error) {
-          console.error(`Error found: ${error}`);
-        }
-        console.log(`Created a new event with id ${eventId}`);
-      },
-    );
-  }, []);
-
-  const handleAlert = useCallback(() => {
-    const {EVENT_NAME} = CalendarModules.getConstants();
-    Alert.alert(EVENT_NAME);
-  }, []);
-
-  const handleCalendarOther = useCallback(() => {
-    CalendarModules.createCalendarEventOther(
-      'testName',
-      'testLocation',
-      eventId => {
-        console.log(`Created a new event with id ${eventId}`);
-      },
-      error => {
-        console.error(`Error found: ${error}`);
-      },
-    );
-  }, []);
-
-  const handleCalendarPromise = useCallback(async () => {
-    try {
-      const str = await CalendarModules.createCalendarEventPromise(
-        'error',
-        'testLocation',
-      );
-      console.log(`str: ${str}`);
-    } catch (error) {
-      console.error(`Error found: ${error}`);
-    }
-  }, []);
-
-  const handleChooseImage = useCallback(async () => {
-    const uri = await ImagePickerModule.pickImage();
-    console.log(`uri: ${uri}`);
-    setImageUri(uri);
-  }, []);
-
-  const handleCreateEvent = useCallback(() => {
-    CalendarModules.createEvent('testName');
-  }, []);
+const App = () => {
+  const [outerScrollEnabled, setOuterScrollEnabled] = useState(true);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <View style={styles.pageContainer}>
-        {imageUri && (
-          <Image source={{uri: imageUri}} width={200} height={200} />
-        )}
-        <Text style={{color: 'yellow'}}>hello android</Text>
-        <Pressable onPress={handlePress} style={styles.pressContainer}>
-          <Text>createCalendarEvent</Text>
-        </Pressable>
-        <Pressable onPress={handleAlert} style={styles.pressContainer}>
-          <Text>getConstants</Text>
-        </Pressable>
-        <Pressable onPress={handleCalendarOther} style={styles.pressContainer}>
-          <Text>getConstants</Text>
-        </Pressable>
-        <Pressable
-          onPress={handleCalendarPromise}
-          style={styles.pressContainer}>
-          <Text>createCalendarEventPromise</Text>
-        </Pressable>
-        <Pressable onPress={handleCreateEvent} style={styles.pressContainer}>
-          <Text>createEvent</Text>
-        </Pressable>
-        <Pressable onPress={handleChooseImage} style={styles.pressContainer}>
-          <Text>chooseImage</Text>
-        </Pressable>
-      </View>
-    </SafeAreaView>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <ScrollView
+        scrollEnabled={outerScrollEnabled}
+        style={styles.outerScroll}
+        onScroll={({nativeEvent}) => {
+          if (isCloseToBottom(nativeEvent)) {
+            setOuterScrollEnabled(true);
+          }
+        }}
+        scrollEventThrottle={400}>
+        <View style={styles.content}>
+          <View
+            style={{
+              height: 300,
+              backgroundColor: '#eee',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <Text>头部区域模拟</Text>
+          </View>
+          <ScrollView
+            nestedScrollEnabled={true}
+            style={styles.innerScroll}
+            onScrollBeginDrag={() => setOuterScrollEnabled(false)}
+            onMomentumScrollEnd={() => setOuterScrollEnabled(true)}>
+            {Array(30)
+              .fill('')
+              .map((_, i) => (
+                <View
+                  style={{
+                    height: 100,
+                    backgroundColor: 'yellow',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Text>item - {i}</Text>
+                </View>
+              ))}
+          </ScrollView>
+        </View>
+      </ScrollView>
+    </GestureHandlerRootView>
   );
-}
+};
+
+const isCloseToBottom = ({layoutMeasurement, contentOffset, contentSize}) => {
+  const paddingToBottom = 20;
+  return (
+    layoutMeasurement.height + contentOffset.y >=
+    contentSize.height - paddingToBottom
+  );
+};
 
 const styles = StyleSheet.create({
-  pageContainer: {
-    width: width,
-    height: height,
-    justifyContent: 'center',
-    alignItems: 'center',
+  outerScroll: {
+    flex: 1,
   },
-  pressContainer: {
-    marginTop: 40,
+  content: {},
+  innerScroll: {
+    marginTop: 20,
+    backgroundColor: '#ccc',
+    height: 700,
   },
 });
 
