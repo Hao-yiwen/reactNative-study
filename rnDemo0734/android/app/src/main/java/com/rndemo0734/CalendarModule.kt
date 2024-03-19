@@ -14,10 +14,12 @@ import com.facebook.react.modules.core.DeviceEventManagerModule
 class CalendarModule(reactContext: ReactApplicationContext) :
     ReactContextBaseJavaModule(reactContext) {
     override fun getName(): String {
+        Log.d("CalendarModule", "getName called")
         return "CalendarModule"
     }
 
     override fun getConstants(): MutableMap<String, Any>? {
+        Log.d("CalendarModule", "getConstants called")
         return hashMapOf("EVENT_NAME" to "CreateCalendarEvent")
     }
 
