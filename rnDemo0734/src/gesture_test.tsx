@@ -6,7 +6,7 @@ const App = () => {
   const [outerScrollEnabled, setOuterScrollEnabled] = useState(true);
 
   return (
-    <GestureHandlerRootView style={{flex: 1}}>
+    <View style={{flex: 1}}>
       <ScrollView
         scrollEnabled={outerScrollEnabled}
         style={styles.outerScroll}
@@ -47,7 +47,7 @@ const App = () => {
           </ScrollView>
         </View>
       </ScrollView>
-    </GestureHandlerRootView>
+    </View>
   );
 };
 
