@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {GestureHandlerRootView, ScrollView} from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
+// import {GestureHandlerRootView, ScrollView} from 'react-native-gesture-handler';
 
 const App = () => {
   const [outerScrollEnabled, setOuterScrollEnabled] = useState(true);
@@ -24,13 +24,9 @@ const App = () => {
               justifyContent: 'center',
               alignItems: 'center',
             }}>
-            <Text>头部区域模拟</Text>
+            <Text>外部scrollview</Text>
           </View>
-          <ScrollView
-            nestedScrollEnabled={true}
-            style={styles.innerScroll}
-            onScrollBeginDrag={() => setOuterScrollEnabled(false)}
-            onMomentumScrollEnd={() => setOuterScrollEnabled(true)}>
+          <ScrollView style={styles.innerScroll}>
             {Array(30)
               .fill('')
               .map((_, i) => (
@@ -41,7 +37,7 @@ const App = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <Text>item - {i}</Text>
+                  <Text>里面的scrollview</Text>
                 </View>
               ))}
           </ScrollView>
@@ -67,7 +63,7 @@ const styles = StyleSheet.create({
   innerScroll: {
     marginTop: 20,
     backgroundColor: '#ccc',
-    height: 700,
+    // height: 700,
   },
 });
 

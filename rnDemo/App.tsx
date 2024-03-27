@@ -16,6 +16,8 @@ import MapView from './src/View/MapView';
 import DatePicker from '@src/View/DatePicker';
 import NativeModules from '@src/View/NativeModules';
 import SwiftModule from '@src/View/SwiftModule';
+import ScrollviewTest from '@src/View/ScrollviewTest';
+import ScrollviewTest2 from '@src/View/ScrollviewTest2';
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +39,8 @@ function App() {
           <Stack.Screen name="DatePicker" component={DatePicker} options={{title: 'DatePicker'}} />
           <Stack.Screen name="NativeModules" component={NativeModules} options={{title: 'NativeModules'}} />
           <Stack.Screen name="SwiftModule" component={SwiftModule} options={{title: 'SwiftModule'}} />
+          <Stack.Screen name="ScrollviewTest" component={ScrollviewTest} options={{title: 'ScrollviewTest'}} />
+          <Stack.Screen name="ScrollviewTest2" component={ScrollviewTest2} options={{title: 'ScrollviewTest2'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

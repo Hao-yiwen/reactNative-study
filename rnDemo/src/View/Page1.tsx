@@ -1,6 +1,6 @@
 // HomePage
 import React, {useEffect} from 'react';
-import {Text, View, Button, ScrollView} from 'react-native';
+import {Text, View, Button, ScrollView, Animated} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const YourApp = ({navigation}: any) => {
@@ -109,6 +109,12 @@ const YourApp = ({navigation}: any) => {
         title="跳转到SwiftModule"
         onPress={() => {
           navigation.navigate('SwiftModule');
+        }}
+      />
+      <Button
+        title="0725不同页面scrollview相互干扰测试"
+        onPress={() => {
+          navigation.navigate('ScrollviewTest');
         }}
       />
     </ScrollView>
