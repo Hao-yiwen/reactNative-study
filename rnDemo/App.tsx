@@ -18,6 +18,8 @@ import NativeModules from '@src/View/NativeModules';
 import SwiftModule from '@src/View/SwiftModule';
 import ScrollviewTest from '@src/View/ScrollviewTest';
 import ScrollviewTest2 from '@src/View/ScrollviewTest2';
+import AnimatedScrollview from '@src/View/AnimatedScrollview';
+import ComponentApiTest from '@src/View/ComponentApiTest';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +43,12 @@ function App() {
           <Stack.Screen name="SwiftModule" component={SwiftModule} options={{title: 'SwiftModule'}} />
           <Stack.Screen name="ScrollviewTest" component={ScrollviewTest} options={{title: 'ScrollviewTest'}} />
           <Stack.Screen name="ScrollviewTest2" component={ScrollviewTest2} options={{title: 'ScrollviewTest2'}} />
+          <Stack.Screen
+            name="AnimatedScrollview"
+            component={AnimatedScrollview}
+            options={{title: 'AnimatedScrollview'}}
+          />
+          <Stack.Screen name="ComponentApiTest" component={ComponentApiTest} options={{title: 'ComponentApiTest'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

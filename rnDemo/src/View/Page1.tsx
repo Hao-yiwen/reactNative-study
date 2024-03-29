@@ -117,6 +117,18 @@ const YourApp = ({navigation}: any) => {
           navigation.navigate('ScrollviewTest');
         }}
       />
+      <Button
+        title="AnimatedScrollview"
+        onPress={() => {
+          navigation.navigate('AnimatedScrollview');
+        }}
+      />
+      <Button
+        title="ComponentApiTest"
+        onPress={() => {
+          navigation.navigate('ComponentApiTest');
+        }}
+      />
     </ScrollView>
   );
 };
