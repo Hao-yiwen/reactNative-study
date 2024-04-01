@@ -28,6 +28,14 @@ class MainApplication : Application(), ReactApplication {
 
         override val isNewArchEnabled: Boolean = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
         override val isHermesEnabled: Boolean = BuildConfig.IS_HERMES_ENABLED
+
+        override fun getBundleAssetName(): String? {
+          return super.getBundleAssetName()
+        }
+
+        override fun getJSBundleFile(): String? {
+          return super.getJSBundleFile()
+        }
       }
 
   override val reactHost: ReactHost
