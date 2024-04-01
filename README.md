@@ -1,6 +1,6 @@
 # reactNative-study
 
-## 项目介绍
+## 项目表格
 
 | 项目名称            | 项目描述                                          | 项目架构 |
 | ------------------- | ------------------------------------------------- | -------- |
@@ -14,8 +14,7 @@
 | pnpm-workspace-test | rn 使用 pnpmworkspace 测试                        | 非新架构 |
 | RTNCalculator       | 新架构 Apidemo                                    | 新架构   |
 | RTNCenteredText     | 新架构组件 demo                                   | 新架构   |
-| FabricArchDemo     | 新架构组件 demo                                   | 新架构   |
 
-## 注意
+## 调试问题
 
-- RN0736开始可以正常使用hermes和实验性调试
+reactNative@0.73.6中调试问题已经得到解决,0.73.6 可作为稳定版本在项目中进行开发。
