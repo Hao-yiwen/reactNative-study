@@ -4,7 +4,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Home';
 import Page1 from './src/Page1';
 
-
 const Stack = createNativeStackNavigator();
 
 function App() {
