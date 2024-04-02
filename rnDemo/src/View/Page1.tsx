@@ -129,6 +129,18 @@ const YourApp = ({navigation}: any) => {
           navigation.navigate('ComponentApiTest');
         }}
       />
+      <Button
+        title="Animated"
+        onPress={() => {
+          navigation.navigate('Animated');
+        }}
+      />
+      <Button
+        title="Measure"
+        onPress={() => {
+          navigation.navigate('Measure');
+        }}
+      />
     </ScrollView>
   );
 };

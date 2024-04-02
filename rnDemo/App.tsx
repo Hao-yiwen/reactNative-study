@@ -20,6 +20,8 @@ import ScrollviewTest from '@src/View/ScrollviewTest';
 import ScrollviewTest2 from '@src/View/ScrollviewTest2';
 import AnimatedScrollview from '@src/View/AnimatedScrollview';
 import ComponentApiTest from '@src/View/ComponentApiTest';
+import Animated from '@src/View/Animated';
+import Measure from '@src/View/Measure';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +51,8 @@ function App() {
             options={{title: 'AnimatedScrollview'}}
           />
           <Stack.Screen name="ComponentApiTest" component={ComponentApiTest} options={{title: 'ComponentApiTest'}} />
+          <Stack.Screen name="Animated" component={Animated} options={{title: 'Animated'}} />
+          <Stack.Screen name="Measure" component={Measure} options={{title: 'Measure'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
