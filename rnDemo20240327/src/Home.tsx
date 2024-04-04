@@ -50,6 +50,13 @@ const App: React.FC = () => {
             navigation.navigate('SectionListRef');
           }}
         />
+        <Button
+          title="Animated"
+          onPress={() => {
+            console.log('Animated');
+            navigation.navigate('Animated');
+          }}
+        />
       </ScrollView>
     </SafeAreaView>
   );

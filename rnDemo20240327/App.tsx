@@ -8,6 +8,7 @@ import FindNodeHandle from './src/FindNodeHandle';
 import UIManager from './src/UIManager';
 import LayoutAnimationExample from './src/LayoutAnimation';
 import SectionListRef from './src/SectionListRef';
+import Animated from './src/Animated';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,6 +50,11 @@ function App() {
           name="SectionListRef"
           component={SectionListRef}
           options={{title: 'SectionListRef'}}
+        />
+        <Stack.Screen
+          name="Animated"
+          component={Animated}
+          options={{title: 'Animated'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
