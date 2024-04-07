@@ -9,6 +9,8 @@ import UIManager from './src/UIManager';
 import LayoutAnimationExample from './src/LayoutAnimation';
 import SectionListRef from './src/SectionListRef';
 import Animated from './src/Animated';
+import PageX from './src/PageX';
+import Sectionlist from './src/SectionList';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +57,16 @@ function App() {
           name="Animated"
           component={Animated}
           options={{title: 'Animated'}}
+        />
+        <Stack.Screen
+          name="PageX"
+          component={PageX}
+          options={{title: 'PageX'}}
+        />
+        <Stack.Screen
+          name="Sectionlist"
+          component={Sectionlist}
+          options={{title: 'Sectionlist'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

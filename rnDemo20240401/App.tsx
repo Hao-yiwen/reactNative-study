@@ -1,66 +1,17 @@
-import React, {useCallback} from 'react';
-import {View, Text, Animated, TouchableOpacity, Button} from 'react-native';
+import React from 'react';
+import {View, Text, Button, Touchable, TouchableOpacity} from 'react-native';
 
-const App = () => {
-  const fadeAnim = new Animated.Value(0);
-
-  const animationStart = useCallback(() => {
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 1000,
-      useNativeDriver: true,
-    }).start();
-  }, [fadeAnim]);
-
+const Index = () => {
   return (
-    <View style={{flex: 1, backgroundColor: 'pink'}}>
+    <View style={{flex: 1}}>
       <TouchableOpacity
         onPress={() => {
-          console.log('TouchableOpacity onPress');
+          console.log('点击了');
         }}>
-        <Animated.View
-          style={{
-            width: 100,
-            height: 100,
-            backgroundColor: 'green',
-            transform: [
-              {
-                translateY: fadeAnim.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [0, 100],
-                }),
-              },
-            ],
-          }}>
-          <Text>Animated</Text>
-        </Animated.View>
+        <Text>点击我</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={animationStart} style={{margin: 60}}>
-        <Text
-          onLayout={() => {
-            console.log('Text onLayout');
-          }}>
-          Start Animation
-        </Text>
-      </TouchableOpacity>
-      <Button
-        title="Button"
-        onPress={() => {
-          console.log('Button onPress');
-        }}
-      />
-      <View style={{flex: 1}}>
-        <Text
-          style={{
-            left: 'auto',
-            right: 10,
-            fontSize: 20,
-          }}>
-          Text
-        </Text>
-      </View>
     </View>
   );
 };
 
-export default App;
+export default Index;

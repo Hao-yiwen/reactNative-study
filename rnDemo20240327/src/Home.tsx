@@ -57,6 +57,20 @@ const App: React.FC = () => {
             navigation.navigate('Animated');
           }}
         />
+        <Button
+          title="PageX"
+          onPress={() => {
+            console.log('PageX');
+            navigation.navigate('PageX');
+          }}
+        />
+        <Button
+          title="Sectionlist"
+          onPress={() => {
+            console.log('Sectionlist');
+            navigation.navigate('Sectionlist');
+          }}
+        />
       </ScrollView>
     </SafeAreaView>
   );
