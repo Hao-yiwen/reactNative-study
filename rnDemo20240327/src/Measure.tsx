@@ -37,12 +37,21 @@ const MeasureScreen = () => {
   const measureLayoutBetweenViews = () => {
     textRef.current.measureLayout(
       viewTwoRef.current,
-      (left: any, top: any, width: any, height: any) => {
+      (
+        left: any,
+        top: any,
+        width: any,
+        height: any,
+        pageX: any,
+        pageY: any,
+      ) => {
         console.log('View Two relative to View One:', {
           left,
           top,
           width,
           height,
+          pageX,
+          pageY,
         });
       },
       (error: any) => {

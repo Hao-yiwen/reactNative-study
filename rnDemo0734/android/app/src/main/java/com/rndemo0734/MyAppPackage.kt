@@ -6,13 +6,21 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ReactShadowNode
 import com.facebook.react.uimanager.ViewManager
+import com.rndemo0734.components.MyCustomViewManager
+import com.rndemo0734.components.MyViewManager
+import com.rndemo0734.components.ReactImageManager
 
 class MyAppPackage : ReactPackage {
     override fun createNativeModules(p0: ReactApplicationContext): MutableList<NativeModule> {
         return listOf<NativeModule>(CalendarModule(p0), ImagePickerModule(p0)).toMutableList()
     }
 
-    override fun createViewManagers(p0: ReactApplicationContext): MutableList<ViewManager<View, ReactShadowNode<*>>> {
-        return mutableListOf()
-    }
+    override fun createViewManagers(
+        reactContext: ReactApplicationContext
+    ) = mutableListOf(
+        ReactImageManager(reactContext),
+        MyCustomViewManager(reactContext),
+        MyViewManager(reactContext)
+    )
+
 }
