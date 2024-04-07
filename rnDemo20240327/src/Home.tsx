@@ -10,7 +10,6 @@ const App: React.FC = () => {
         <Button
           title="Page1"
           onPress={() => {
-            debugger;
             console.log('Page1');
             navigation.navigate('Page1');
           }}
@@ -69,6 +68,13 @@ const App: React.FC = () => {
           onPress={() => {
             console.log('Sectionlist');
             navigation.navigate('Sectionlist');
+          }}
+        />
+        <Button
+          title="SetNativeProps"
+          onPress={() => {
+            console.log('SetNativeProps');
+            navigation.navigate('SetNativeProps');
           }}
         />
       </ScrollView>

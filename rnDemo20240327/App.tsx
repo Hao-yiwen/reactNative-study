@@ -11,6 +11,7 @@ import SectionListRef from './src/SectionListRef';
 import Animated from './src/Animated';
 import PageX from './src/PageX';
 import Sectionlist from './src/SectionList';
+import SetNativeProps from './src/SetNativeProps';
 
 const Stack = createNativeStackNavigator();
 
@@ -67,6 +68,11 @@ function App() {
           name="Sectionlist"
           component={Sectionlist}
           options={{title: 'Sectionlist'}}
+        />
+        <Stack.Screen
+          name="SetNativeProps"
+          component={SetNativeProps}
+          options={{title: 'SetNativeProps'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
