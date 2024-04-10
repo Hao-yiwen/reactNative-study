@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const DATA = Array.from({length: 100}, (_, i) => ({})).map((_, index) => ({
+const DATA = Array.from({length: 300}, (_, i) => ({})).map((_, index) => ({
   id: index.toString(),
   title: `Item ${index}`,
 }));

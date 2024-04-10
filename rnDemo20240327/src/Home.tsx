@@ -6,7 +6,10 @@ const App: React.FC = () => {
   const navigation = useNavigation<any>();
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView
+        onScroll={() => {
+          console.log('onScroll');
+        }}>
         <Button
           title="Page1"
           onPress={() => {
@@ -75,6 +78,13 @@ const App: React.FC = () => {
           onPress={() => {
             console.log('SetNativeProps');
             navigation.navigate('SetNativeProps');
+          }}
+        />
+        <Button
+          title="FlatlistTmp"
+          onPress={() => {
+            console.log('FlatlistTmp');
+            navigation.navigate('FlatlistTmp');
           }}
         />
       </ScrollView>

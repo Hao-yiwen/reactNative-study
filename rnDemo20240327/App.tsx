@@ -12,6 +12,7 @@ import Animated from './src/Animated';
 import PageX from './src/PageX';
 import Sectionlist from './src/SectionList';
 import SetNativeProps from './src/SetNativeProps';
+import FlatlistTmp from './src/FlatlistTmp';
 
 const Stack = createNativeStackNavigator();
 
@@ -73,6 +74,11 @@ function App() {
           name="SetNativeProps"
           component={SetNativeProps}
           options={{title: 'SetNativeProps'}}
+        />
+        <Stack.Screen
+          name="FlatlistTmp"
+          component={FlatlistTmp}
+          options={{title: 'FlatlistTmp'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
