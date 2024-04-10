@@ -7,6 +7,9 @@ import {
   Text,
   StatusBar,
   TouchableOpacity,
+  Modal,
+  Dimensions,
+  Button,
 } from 'react-native';
 
 const DATA = Array.from({length: 300}, (_, i) => ({})).map((_, index) => ({
@@ -18,6 +21,7 @@ type ItemProps = {title: string};
 
 const App = () => {
   const [data, setData] = React.useState(DATA);
+  const [visible, setVisible] = React.useState(false);
 
   const Item = ({title, id}: ItemProps) => (
     <View style={styles.item} key={id}>
@@ -35,11 +39,52 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <TouchableOpacity
+        onPress={() => {
+          setVisible(true);
+        }}>
+        <Text style={{color: 'black'}}>打开Flatlist弹窗</Text>
+      </TouchableOpacity>
       <FlatList
         data={data}
         renderItem={({item}) => <Item title={item.title} id={item.id} />}
         keyExtractor={item => item.id}
       />
+      <Modal visible={visible} animationType="slide" transparent>
+        <View
+          style={{
+            flex: 1,
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+          }}>
+          <View
+            style={{
+              height: Dimensions.get('screen').height * 0.7,
+              borderRadius: 20,
+              backgroundColor: 'white',
+              width: '100%',
+            }}>
+            <Button
+              title="点击关闭弹窗"
+              onPress={() => {
+                setVisible(false);
+              }}
+            />
+            <FlatList
+              data={data}
+              renderItem={({item}) => <Item title={item.title} id={item.id} />}
+              keyExtractor={item => item.id}
+            />
+            <TouchableOpacity
+              onPress={() => {
+                setVisible(false);
+              }}>
+              <Text>关闭</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 };
