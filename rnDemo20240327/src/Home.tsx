@@ -87,6 +87,12 @@ const App: React.FC = () => {
             navigation.navigate('FlatlistTmp');
           }}
         />
+        <Button
+          title="ModalTabView"
+          onPress={() => {
+            console.log('ModalTabView');
+            navigation.navigate('ModalTabView');
+          }}></Button>
       </ScrollView>
     </SafeAreaView>
   );

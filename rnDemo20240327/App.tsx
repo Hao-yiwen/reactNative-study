@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Home';
@@ -13,10 +13,15 @@ import PageX from './src/PageX';
 import Sectionlist from './src/SectionList';
 import SetNativeProps from './src/SetNativeProps';
 import FlatlistTmp from './src/FlatlistTmp';
+import ModalTabView from './src/ModalTabView';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
+  useEffect(() => {
+    const data = new Date('2024/02/15');
+    console.log(data);
+  }, []);
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -79,6 +84,11 @@ function App() {
           name="FlatlistTmp"
           component={FlatlistTmp}
           options={{title: 'FlatlistTmp'}}
+        />
+        <Stack.Screen
+          name="ModalTabView"
+          component={ModalTabView}
+          options={{title: 'ModalTabView'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
