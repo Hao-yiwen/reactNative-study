@@ -8,3 +8,5 @@
 - 无桥模式
 - yarn3.x
 - onlayout批处理
+
+## 使用vscode进行调试
