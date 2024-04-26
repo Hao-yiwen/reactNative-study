@@ -8,3 +8,6 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+-keepclassmembers class com.rndemo0740.MainActivity {
+    public <init>(android.content.Context);
+}
