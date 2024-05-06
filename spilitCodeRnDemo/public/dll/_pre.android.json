@@ -1,0 +1,4 @@
+[
+  "__prelude__",
+  "node_modules/metro-runtime/src/polyfills/require.js"
+]
