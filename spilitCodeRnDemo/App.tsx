@@ -9,10 +9,9 @@ import React from 'react';
 import {SafeAreaView, Text, useColorScheme} from 'react-native';
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
-    backgroundColor: '#fff',
+    flex: 1,
+    backgroundColor: 'pink',
   };
 
   return (
