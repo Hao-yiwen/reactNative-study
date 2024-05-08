@@ -111,8 +111,7 @@ public class PreBaseInit extends AppCompatActivity implements DefaultHardwareBac
     private void loadForSystemOrAssets ( CatalystInstance instance, ReactContext context  ) {
         String filePath$Name = "assets://" + getJSBundleAssetName();
 
-        ((CatalystInstanceImpl)instance).loadSplitBundleFromFile( filePath$Name, filePath$Name);
-
+        ((CatalystInstanceImpl)instance).loadScriptFromAssets(context.getAssets(),filePath$Name ,false);
     }
 
     @Override

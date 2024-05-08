@@ -25,7 +25,6 @@ public class MainApplication extends Application {
         mApp = this;
 
         packages = new PackageList(this).getPackages();
-        packages.add(new MainReactPackage());
 
         cacheReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(this)

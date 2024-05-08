@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const clean = function (file) {
-  fs.writeFileSync(file, JSON.stringify({}), 'utf8');
+  fs.writeFileSync(file, JSON.stringify({}));
 };
 
 const hasBuildInfo = function (file, path) {
@@ -12,7 +12,7 @@ const hasBuildInfo = function (file, path) {
 const writeBuildInfo = function (file, path, id) {
   const cacheFile = require(file);
   cacheFile[path] = id;
-  fs.writeFileSync(file, JSON.stringify(cacheFile), 'utf8');
+  fs.writeFileSync(file, JSON.stringify(cacheFile));
 };
 
 const getCacheFile = function (file, path) {
@@ -20,31 +20,29 @@ const getCacheFile = function (file, path) {
   return cacheFile[path] || 0;
 };
 
-const isPwdFile = path => {
-  const cwd = __dirname.split('/').splice(-1, 1).toString();
+const isPwdFile = (path) => {
+  const cwd = __dirname.split("/").splice(-1, 1).toString();
 
-  const pathArr = path.split('/');
-
+  const pathArray = path.split("/");
   const map = new Map();
-
   const reverseMap = new Map();
 
-  pathArr.forEach((item, index) => {
-    map.set(item, index);
-    reverseMap.set(index, item);
+  pathArray.forEach((it, indx) => {
+    map.set(it, indx);
+    reverseMap.set(indx, it);
   });
 
-  if (pathArr.length - 2 == map.get(cwd)) {
-    return reverseMap.get(pathArr.length - 1).replace('.js', '');
+  if (pathArray.length - 2 == map.get(cwd)) {
+    return reverseMap.get(pathArray.length - 1).replace(/\.js/, "");
   }
 
-  return '';
+  return "";
 };
 
 module.exports = {
-  clean,
   hasBuildInfo,
   writeBuildInfo,
   getCacheFile,
+  clean,
   isPwdFile,
 };
