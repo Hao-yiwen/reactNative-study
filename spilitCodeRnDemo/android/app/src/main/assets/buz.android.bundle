@@ -1,5 +1,0 @@
-var __APP__={publicPath:"https://a.cdn.com/a-rn-project"};
-__d((function(g,r,i,a,m,e,d){var n=r(d[0]),t=r(d[1]),o=n(r(d[2]));t.AppRegistry.registerComponent(r(d[3]).name,(function(){return o.default}))}),"index.js",["node_modules/@babel/runtime/helpers/interopRequireDefault.js","node_modules/react-native/index.js","App.tsx","app.json"]);
-__d((function(g,r,i,a,m,e,d){var o=r(d[0]);Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;o(r(d[1]));var f=r(d[2]),l=r(d[3]);e.default=function(){return(0,f.useColorScheme)(),(0,l.jsx)(f.SafeAreaView,{style:{backgroundColor:'#fff'},children:(0,l.jsx)(f.Text,{children:"123"})})}}),"App.tsx",["node_modules/@babel/runtime/helpers/interopRequireDefault.js","node_modules/react/index.js","node_modules/react-native/index.js","node_modules/react/jsx-runtime.js"]);
-__d((function(e,i,o,n,d,m,p){d.exports={name:"spilitCodeRnDemo",displayName:"spilitCodeRnDemo"}}),"app.json",[]);
-__r("index.js");
