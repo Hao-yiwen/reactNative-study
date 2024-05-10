@@ -1,14 +1,14 @@
-const { hasBuildInfo, getCacheFile, isPwdFile } = require("./build");
-const bundleBuInfo = require("./config/bundleBuInfo.json");
+const {hasBuildInfo, getCacheFile, isPwdFile} = require('./build');
+const bundleBuInfo = require('./config/bundleBuInfo.json');
 function postProcessModulesFilter(module) {
   if (
-    module["path"].indexOf("__prelude__") >= 0 ||
-    module["path"].indexOf("polyfills") >= 0
+    module['path'].indexOf('__prelude__') >= 0 ||
+    module['path'].indexOf('polyfills') >= 0
   ) {
     return false;
   }
 
-  if (hasBuildInfo("./config/bundleCommonInfo.json", module.path)) {
+  if (hasBuildInfo('./config/bundleCommonInfo.json', module.path)) {
     return false;
   }
 
@@ -22,9 +22,9 @@ function createModuleIdFactory() {
   let nextId = 10000000;
   let isFirst = false;
 
-  return (path) => {
-    if (Boolean(getCacheFile("./config/bundleCommonInfo.json", path))) {
-      return getCacheFile("./config/bundleCommonInfo.json", path);
+  return path => {
+    if (Boolean(getCacheFile('./config/bundleCommonInfo.json', path))) {
+      return getCacheFile('./config/bundleCommonInfo.json', path);
     }
 
     if (!isFirst && isPwdFile(path)) {
@@ -33,7 +33,7 @@ function createModuleIdFactory() {
     }
 
     let id = fileToIdMap.get(path);
-    if (typeof id !== "number") {
+    if (typeof id !== 'number') {
       id = nextId++;
       fileToIdMap.set(path, id);
     }
@@ -41,10 +41,19 @@ function createModuleIdFactory() {
   };
 }
 
-module.exports = {
+const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+
+/**
+ * Metro configuration
+ * https://facebook.github.io/metro/docs/configuration
+ *
+ * @type {import('metro-config').MetroConfig}
+ */
+const config = {
   serializer: {
     createModuleIdFactory: createModuleIdFactory, // 给 bundle 一个id 避免冲突 cli 源码中这个id 是从1 开始 自增的
     processModuleFilter: postProcessModulesFilter, // 返回false 就不会build 进去
   },
 };
-  
+
+module.exports = mergeConfig(getDefaultConfig(__dirname), config);

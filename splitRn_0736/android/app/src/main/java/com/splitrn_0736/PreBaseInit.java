@@ -28,7 +28,10 @@ public class PreBaseInit extends AppCompatActivity implements DefaultHardwareBac
     private ReactInstanceManager mReactInstanceManager;
 
     public String getJSBundleAssetName() {
-        return "index.android.bundle";
+        if(BuildConfig.DEBUG){
+            return "index.android.bundle";
+        }
+        return "bu.android.bundle";
     }
 
     ;
@@ -58,6 +61,23 @@ public class PreBaseInit extends AppCompatActivity implements DefaultHardwareBac
             }
         }
         SoLoader.init(this, false);
+
+        if( BuildConfig.DEBUG ){
+            mReactRootView = new ReactRootView(this);
+            mReactInstanceManager = ReactInstanceManager.builder()
+                    .setApplication(getApplication())
+                    .setCurrentActivity(this)
+                    .setBundleAssetName(getJSBundleAssetName())
+                    .setJSMainModulePath(getJsModulePathPath())
+                    .addPackages(MainApplication.getInstance().packages)
+                    .setUseDeveloperSupport(true)
+                    .setInitialLifecycleState(LifecycleState.RESUMED)
+                    .build();
+
+            mReactRootView.startReactApplication(mReactInstanceManager, getResName(), null);
+            setContentView(mReactRootView);
+            return;
+        }
 
         mReactInstanceManager = MainApplication.getInstance().getRcInstanceManager();
         mReactInstanceManager.onHostResume(this, this);
@@ -168,3 +188,4 @@ public class PreBaseInit extends AppCompatActivity implements DefaultHardwareBac
         return super.onKeyUp(keyCode, event);
     }
 }
+
