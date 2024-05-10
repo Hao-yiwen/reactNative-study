@@ -22,7 +22,10 @@ public class MainActivity extends PreBaseInit {
 
     @Override
     public String getJSBundleAssetName(){
-        return "index.android.bundle";
+        if(BuildConfig.DEBUG){
+            return "index.android.bundle";
+        }
+        return "bu.android.bundle";
     };
 
     @Override
