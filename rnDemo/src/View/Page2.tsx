@@ -23,22 +23,16 @@ export default ({navigation}: any) => {
 
     // 创建表
     db.current.transaction((tx: any) => {
-      tx.executeSql(
-        'CREATE TABLE IF NOT EXISTS Users (UserID INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT);',
-      );
+      tx.executeSql('CREATE TABLE IF NOT EXISTS Users (UserID INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT);');
     });
 
     db.current.transaction((tx: any) => {
-      tx.executeSql(
-        'INSERT INTO Users (Name) VALUES (?)',
-        ['test'],
-        (_: any, results: any) => {
-          console.log('Results', results.rowsAffected);
-          if (results.rowsAffected > 0) {
-            console.log('数据插入成功！');
-          } else console.log('数据插入失败！');
-        },
-      );
+      tx.executeSql('INSERT INTO Users (Name) VALUES (?)', ['test'], (_: any, results: any) => {
+        console.log('Results', results.rowsAffected);
+        if (results.rowsAffected > 0) {
+          console.log('数据插入成功！');
+        } else console.log('数据插入失败！');
+      });
     });
   }, []);
 

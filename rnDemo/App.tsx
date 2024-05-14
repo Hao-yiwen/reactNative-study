@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Provider} from 'react-redux';
 import store from '@src/Store/store';
-import Page1 from '@src/View/Page1';
+import Home from '@src/Home';
 import Page2 from '@src/View/Page2';
 import Page3 from '@src/View/Page3';
 import Page4 from '@src/View/Page4';
@@ -22,6 +22,7 @@ import AnimatedScrollview from '@src/View/AnimatedScrollview';
 import ComponentApiTest from '@src/View/ComponentApiTest';
 import Animated from '@src/View/Animated';
 import Measure from '@src/View/Measure';
+import FontFamilyPage from '@src/View/FontFamilyPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,7 +31,7 @@ function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Page1" component={Page1} options={{title: 'Overview'}} />
+          <Stack.Screen name="Home" component={Home} options={{title: 'Overview'}} />
           <Stack.Screen name="Page2" component={Page2} options={{title: 'Page2'}} />
           <Stack.Screen name="Page3" component={Page3} options={{title: 'Page3'}} />
           <Stack.Screen name="Page4" component={Page4} options={{title: 'Style'}} />
@@ -53,6 +54,7 @@ function App() {
           <Stack.Screen name="ComponentApiTest" component={ComponentApiTest} options={{title: 'ComponentApiTest'}} />
           <Stack.Screen name="Animated" component={Animated} options={{title: 'Animated'}} />
           <Stack.Screen name="Measure" component={Measure} options={{title: 'Measure'}} />
+          <Stack.Screen name="FontFamilyPage" component={FontFamilyPage} options={{title: 'FontFamilyPage'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
