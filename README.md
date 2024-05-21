@@ -14,7 +14,7 @@
 | pnpm-workspace-test | rn 使用 pnpmworkspace 测试                                                                                                                                                 | 非新架构 |
 | RTNCalculator       | 新架构 Apidemo                                                                                                                                                             | 新架构   |
 | RTNCenteredText     | 新架构组件 demo                                                                                                                                                            | 新架构   |
-| rnDemo0740          | rn@0.74.0新版本尝新，vscode 调试测试,0.74.0 的新架构默认是无桥模式                                                                                                         | 新架构   |
+| rnDemo0740          | rn@0.74.0新版本尝新，vscode 调试测试,0.74.0 的新架构默认是无桥模式, rnDemo@0740 实现 fabriccomponent 混合 tubroNativeModules                                               | 新架构   |
 | favricArchDemo      | rn@0.72.6新架构 demo                                                                                                                                                       | 新架构   |
 | splitRn_0736        | rn@0.73.6 拆包测试 demo，存在`java.lang.RuntimeException: com.facebook.react.devsupport.JSException: Cannot read property 'setGlobalHandler' of undefined`问题，问题已解决 | 旧架构   |
 
