@@ -7,7 +7,7 @@
 | rnDemo              | 各类 RN 测试 demo                                                                                                                                                          | 非新架构 |
 | AwesomeProject      | 新架构 JSI 实现测试                                                                                                                                                        | 新架构   |
 | expoDemo            | expo demo                                                                                                                                                                  | 非新架构 |
-| rnDemo1             | ios 桥接实现测试                                                                                                                                                           | 非新架构 |
+| ios-bridge-test     | ios 桥接实现测试                                                                                                                                                           | 非新架构 |
 | rnDemo0734          | Android 桥接实现测试                                                                                                                                                       | 非新架构 |
 | rnDemo20240327      | rn 测试 Demo,和 rnDemo 类似，但是并没有集成很多库                                                                                                                          | 非新架构 |
 | rnDemo20240401      | 新架构测试 demo                                                                                                                                                            | 新架构   |
@@ -15,7 +15,6 @@
 | RTNCalculator       | 新架构 Apidemo                                                                                                                                                             | 新架构   |
 | RTNCenteredText     | 新架构组件 demo                                                                                                                                                            | 新架构   |
 | rnDemo0740          | rn@0.74.0新版本尝新，vscode 调试测试,0.74.0 的新架构默认是无桥模式, rnDemo@0740 实现 fabriccomponent 混合 tubroNativeModules                                               | 新架构   |
-| favricArchDemo      | rn@0.72.6新架构 demo                                                                                                                                                       | 新架构   |
 | splitRn_0736        | rn@0.73.6 拆包测试 demo，存在`java.lang.RuntimeException: com.facebook.react.devsupport.JSException: Cannot read property 'setGlobalHandler' of undefined`问题，问题已解决 | 旧架构   |
 
 ## 调试问题
