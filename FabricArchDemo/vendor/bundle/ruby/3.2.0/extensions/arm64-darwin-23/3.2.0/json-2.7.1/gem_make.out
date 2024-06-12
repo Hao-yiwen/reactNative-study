@@ -1,0 +1,16 @@
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/FabricArchDemo/vendor/bundle/ruby/3.2.0/gems/json-2.7.1/ext/json
+/Users/yw.hao/.rvm/rubies/ruby-3.2.0/bin/ruby -I /Users/yw.hao/.rvm/rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/FabricArchDemo/vendor/bundle/ruby/3.2.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240402-31707-p6jnwz sitelibdir\=./.gem.20240402-31707-p6jnwz clean
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/FabricArchDemo/vendor/bundle/ruby/3.2.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240402-31707-p6jnwz sitelibdir\=./.gem.20240402-31707-p6jnwz
+make: Nothing to be done for `all'.
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/FabricArchDemo/vendor/bundle/ruby/3.2.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240402-31707-p6jnwz sitelibdir\=./.gem.20240402-31707-p6jnwz install
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/FabricArchDemo/vendor/bundle/ruby/3.2.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240402-31707-p6jnwz sitelibdir\=./.gem.20240402-31707-p6jnwz clean
