@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(n){var u,l,o=null!=(u=n[t.CHILD_STATE])?u:n.state,s=n.params;return o?o.routes[null!=(l=o.index)?l:'string'==typeof o.type&&'stack'!==o.type?0:o.routes.length-1].name:'string'==typeof(null==s?void 0:s.screen)?s.screen:void 0};var t=r(d[0])}),463,[464]);
