@@ -6,31 +6,69 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "bundle": "yarn bundle:ios && yarn bundle:android",
+    "bundle:ios": "react-native rnx-bundle --platform ios --entry-file index.js --platform ios --bundle-output dist/ios/index.bundle --sourcemap-output dist/ios/index.bundle.map --assets-dest dist/ios --dev false --minify true",
+    "bundle:android": "react-native rnx-bundle --platform android --entry-file index.js --bundle-output dist/android/index.bundle --sourcemap-output dist/android/index.bundle.map --assets-dest dist/android --dev false --minify true",
+    "ram-bundle": "yarn ram-bundle:ios && yarn ram-bundle:android",
+    "ram-bundle:ios": "react-native rnx-ram-bundle --platform ios --entry-file index.js --platform ios --bundle-output dist-ram/ios/index.bundle --sourcemap-output dist-ram/ios/index.bundle.map --assets-dest dist-ram/ios --dev false --minify true",
+    "ram-bundle:android": "react-native rnx-ram-bundle --platform android --entry-file index.js --bundle-output dist-ram/android/index.bundle --sourcemap-output dist-ram/android/index.bundle.map --assets-dest dist-ram/android --dev false --minify true",
+    "ram-bundle1": "yarn ram-bundle1:ios && yarn ram-bundle1:android",
+    "ram-bundle1:ios": "npx react-native ram-bundle --platform ios --dev false --entry-file index.js --bundle-output ram-bundle/ios/index.ios.bundle --assets-dest ram-bundle/ios/dist",
+    "ram-bundle1:android": "npx react-native ram-bundle --platform android --dev false --entry-file index.js --bundle-output ram-bundle/android/index.android.bundle --assets-dest ram-bundle/android/dist",
+    "bundle1": "yarn bundle1:ios && yarn bundle1:android",
+    "bundle1:android": "npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output bundle/android/index.android.bundle --assets-dest bundle/android/dist",
+    "bundle1:ios": "npx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output bundle/ios/index.ios.bundle --assets-dest bundle/ios/dist",
+    "start": "react-native rnx-start"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.5"
+    "react-native": "^0.72.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@react-native/eslint-config": "^0.72.2",
-    "@react-native/metro-config": "^0.72.11",
+    "@react-native/metro-config": "^0.72.0",
+    "@rnx-kit/align-deps": "^2.5.0",
+    "@rnx-kit/babel-preset-metro-react-native": "^1.1.8",
+    "@rnx-kit/cli": "^0.16.28",
+    "@rnx-kit/metro-config": "^1.3.15",
+    "@rnx-kit/metro-resolver-symlinks": "^0.1.36",
     "@tsconfig/react-native": "^3.0.0",
     "@types/react": "^18.0.24",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
-    "metro-react-native-babel-preset": "0.76.8",
+    "metro-react-native-babel-preset": "^0.76.5",
     "prettier": "^2.4.1",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
   },
   "engines": {
     "node": ">=16"
+  },
+  "rnx-kit": {
+    "kitType": "app",
+    "alignDeps": {
+      "requirements": [
+        "react-native@0.72"
+      ],
+      "capabilities": [
+        "babel-preset-react-native",
+        "core",
+        "core-android",
+        "core-ios",
+        "core/metro-config",
+        "jest",
+        "react",
+        "react-test-renderer"
+      ]
+    },
+    "bundle": {
+      "treeShake": true
+    }
   }
 }

@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,_e,d){var e=r(d[0]).default,o=r(d[1]);m.exports=function(t,n){if(n&&("object"==e(n)||"function"==typeof n))return n;if(void 0!==n)throw new TypeError("Derived constructors may only return object or undefined");return o(t)},m.exports.__esModule=!0,m.exports.default=m.exports}),36,[17,37]);

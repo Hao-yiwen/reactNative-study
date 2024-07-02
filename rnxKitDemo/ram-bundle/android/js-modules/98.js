@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){var n=r(d[0]);Object.defineProperty(e,"__esModule",{value:!0}),e.ConditionallyIgnoredEventHandlers=function(n){if('ios'===t.default.OS)return n;return},e.DynamicallyInjectedByGestureHandler=function(n){return u.add(n),n},e.isIgnored=function(n){if('object'==typeof n&&null!=n)return u.has(n);return!1};var t=n(r(d[1])),u=new WeakSet}),98,[7,56]);

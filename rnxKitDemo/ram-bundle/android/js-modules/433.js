@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){m.exports=r(d[0]).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/node_modules/react-native/Libraries/NewAppScreen/components",width:512,height:512,scales:[1],hash:"3cf817075ffdc798cf13c457bf4c3bc5",name:"logo",type:"png"})}),433,[434]);

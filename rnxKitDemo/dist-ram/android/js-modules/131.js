@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){'use strict';var l,n,s=r(d[0]).polyfillGlobal;if(null!=(l=g)&&null!=(n=l.HermesInternal)&&null!=n.hasPromise&&n.hasPromise())g.Promise;else s('Promise',(function(){return r(d[1])}))}),131,[132,133]);

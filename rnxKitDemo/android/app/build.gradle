@@ -15,6 +15,7 @@ react {
     // codegenDir = file("../node_modules/@react-native/codegen")
     //   The cli.js file which is the React Native CLI entrypoint. Default is ../node_modules/react-native/cli.js
     // cliFile = file("../node_modules/react-native/cli.js")
+    extraPackagerArgs= ["--indexed-ram-bundle"]
 
     /* Variants */
     //   The list of variants to that are debuggable. For those we're going to
@@ -27,7 +28,7 @@ react {
     // nodeExecutableAndArgs = ["node"]
     //
     //   The command to run when bundling. By default is 'bundle'
-    // bundleCommand = "ram-bundle"
+     bundleCommand = "ram-bundle"
     //
     //   The path to the CLI configuration file. Default is empty.
     // bundleConfig = file(../rn-cli.config.js)

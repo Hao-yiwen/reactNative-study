@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){var n=r(d[0]),o=n(r(d[1])),f=n(r(d[2]));o.default?g.performance=new f.default:(g.performance||(g.performance={}),'function'!=typeof g.performance.now&&(g.performance.now=function(){return(g.nativePerformanceNow||Date.now)()}))}),119,[7,120,121]);

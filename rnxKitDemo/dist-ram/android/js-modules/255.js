@@ -1,0 +1,1 @@
+__d((function(g,r,i,a,m,e,d){'use strict';var n=r(d[0]),t=n.shape({body:n.string,bundle:n.string,cache:n.oneOf(['default','force-cache','only-if-cached','reload']),headers:n.objectOf(n.string),height:n.number,method:n.string,scale:n.number,uri:n.string,width:n.number}),c=n.oneOfType([t,n.number,n.arrayOf(t)]);m.exports=c}),255,[251]);
