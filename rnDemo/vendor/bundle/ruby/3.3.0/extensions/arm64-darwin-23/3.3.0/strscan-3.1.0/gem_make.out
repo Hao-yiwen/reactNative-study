@@ -1,0 +1,20 @@
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+/Users/haoyiwen/.rbenv/versions/3.3.3/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-qm2cy5 sitelibdir\=./.gem.20240622-37141-qm2cy5 clean
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-qm2cy5 sitelibdir\=./.gem.20240622-37141-qm2cy5
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-qm2cy5 sitelibdir\=./.gem.20240622-37141-qm2cy5 install
+/opt/homebrew/bin/ginstall -c -m 0755 strscan.bundle ./.gem.20240622-37141-qm2cy5
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-qm2cy5 sitelibdir\=./.gem.20240622-37141-qm2cy5 clean

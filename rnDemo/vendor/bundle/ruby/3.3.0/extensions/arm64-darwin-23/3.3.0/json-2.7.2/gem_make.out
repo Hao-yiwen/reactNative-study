@@ -1,0 +1,16 @@
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+/Users/haoyiwen/.rbenv/versions/3.3.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-ep5c39 sitelibdir\=./.gem.20240622-37141-ep5c39 clean
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-ep5c39 sitelibdir\=./.gem.20240622-37141-ep5c39
+make: Nothing to be done for `all'.
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-ep5c39 sitelibdir\=./.gem.20240622-37141-ep5c39 install
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-ep5c39 sitelibdir\=./.gem.20240622-37141-ep5c39 clean

@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import analytics from '@react-native-firebase/analytics';
 import {Provider} from 'react-redux';
 import store from '@src/Store/store';
 import Home from '@src/Home';
@@ -27,9 +28,27 @@ import FontFamilyPage from '@src/View/FontFamilyPage';
 const Stack = createNativeStackNavigator();
 
 function App() {
+  const routeNameRef = React.useRef();
+  const navigationRef = React.useRef();
   return (
     <Provider store={store}>
-      <NavigationContainer>
+      <NavigationContainer
+        ref={navigationRef}
+        onReady={() => {
+          routeNameRef.current = navigationRef.current.getCurrentRoute().name;
+        }}
+        onStateChange={async () => {
+          const previousRouteName = routeNameRef.current;
+          const currentRouteName = navigationRef.current.getCurrentRoute().name;
+
+          if (previousRouteName !== currentRouteName) {
+            await analytics().logScreenView({
+              screen_name: currentRouteName,
+              screen_class: currentRouteName,
+            });
+          }
+          routeNameRef.current = currentRouteName;
+        }}>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Home} options={{title: 'Overview'}} />
           <Stack.Screen name="Page2" component={Page2} options={{title: 'Page2'}} />

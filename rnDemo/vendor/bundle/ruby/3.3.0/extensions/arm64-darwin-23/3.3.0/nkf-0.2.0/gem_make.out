@@ -1,0 +1,18 @@
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+/Users/haoyiwen/.rbenv/versions/3.3.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-kpj1p2 sitelibdir\=./.gem.20240622-37141-kpj1p2 clean
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-kpj1p2 sitelibdir\=./.gem.20240622-37141-kpj1p2
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-kpj1p2 sitelibdir\=./.gem.20240622-37141-kpj1p2 install
+/opt/homebrew/bin/ginstall -c -m 0755 nkf.bundle ./.gem.20240622-37141-kpj1p2
+
+current directory: /Users/haoyiwen/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240622-37141-kpj1p2 sitelibdir\=./.gem.20240622-37141-kpj1p2 clean
