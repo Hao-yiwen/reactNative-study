@@ -1,18 +1,30 @@
 import React from 'react';
-import {Dimensions, ScrollView, Text, View} from 'react-native';
-import WebView from 'react-native-webview';
+import {NativeModules, Button, SafeAreaView} from 'react-native';
+const {CalendarModule} = NativeModules;
+const {IntentModule} = NativeModules;
 
-const App = props => {
-  console.log('App props:', props);
+const NewModuleButton = () => {
+  const onPress = () => {
+    console.log('We will invoke the native module here!');
+    CalendarModule.createCalendarEvent('testName', 'testLocation');
+  };
+
   return (
-    <View style={{flex: 1, flexDirection: 'row'}}>
-      <WebView
-        style={{flex: 1}}
-        source={{uri: 'https://www.google.com'}}
-        scalesPageToFit={true}
+    <SafeAreaView>
+      <Button
+        title="Click to invoke your native module!"
+        color="#841584"
+        onPress={onPress}
       />
-    </View>
+      <Button
+        title="Navigate to Other Page"
+        color="#841584"
+        onPress={() => {
+          console.log('Navigate to Other Page');
+          IntentModule.startActivityFromJS('https://www.baidu.com');
+        }}></Button>
+    </SafeAreaView>
   );
 };
 
-export default App;
+export default NewModuleButton;
