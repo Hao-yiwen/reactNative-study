@@ -4,7 +4,7 @@
  *
  * @type {import('metro-config').MetroConfig}
  */
-const {getDefaultConfig, mergeConfig} = require('metro-config');
+const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 
 // module.exports = (async () => {
 //   const {

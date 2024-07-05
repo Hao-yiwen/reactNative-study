@@ -1,0 +1,16 @@
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+/Users/yw.hao/.rbenv/versions/3.0.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-49121-qkta27 sitelibdir\=./.gem.20240705-49121-qkta27 clean
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-49121-qkta27 sitelibdir\=./.gem.20240705-49121-qkta27
+make: Nothing to be done for `all'.
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-49121-qkta27 sitelibdir\=./.gem.20240705-49121-qkta27 install
+
+current directory: /Users/yw.hao/Documents/rn/reactNative-study/rnDemo/vendor/bundle/ruby/3.0.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-49121-qkta27 sitelibdir\=./.gem.20240705-49121-qkta27 clean

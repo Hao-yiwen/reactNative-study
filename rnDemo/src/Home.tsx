@@ -19,6 +19,7 @@ const Home = ({navigation}: any) => {
         }}>
         <View style={{marginTop: 20}}>
           <Button
+            width={100}
             title="点击存值"
             onPress={() => {
               const storeData = async (value: string) => {
