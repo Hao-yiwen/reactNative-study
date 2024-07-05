@@ -1,13 +1,13 @@
 // Carousel
 import React from 'react';
 import {View, Text} from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+// import Carousel from 'react-native-snap-carousel';
 
 export default () => {
   return (
     <View style={{alignItems: 'center'}}>
       <Text style={{marginTop: 30}}>Page7</Text>
-      <Carousel
+      {/* <Carousel
         data={[1, 2, 3, 4, 5]}
         renderItem={({item}) => (
           <View
@@ -24,7 +24,7 @@ export default () => {
         )}
         sliderWidth={300}
         itemWidth={200}
-      />
+      /> */}
     </View>
   );
 };

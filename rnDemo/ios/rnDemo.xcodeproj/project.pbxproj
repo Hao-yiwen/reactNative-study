@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnDemoTests.m */; };
+		052094197DB73CFD82E48A4C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 52FB7731F9B0A9D2CA070DD9 /* PrivacyInfo.xcprivacy */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -34,6 +35,7 @@
 		39B051922AFCD5980007234F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B0517F2AFCD5980007234F /* SimpleLineIcons.ttf */; };
 		39B051932AFCD5980007234F /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051802AFCD5980007234F /* FontAwesome6_Brands.ttf */; };
 		39B051942AFCD5980007234F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B051812AFCD5980007234F /* MaterialIcons.ttf */; };
+		39BBE53A2C37E14500A1FECA /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 39BBE5392C37E14400A1FECA /* main.jsbundle */; };
 		39FDF50D2B03A74900D2C031 /* SwiftModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF50C2B03A74900D2C031 /* SwiftModule.swift */; };
 		455ED71118D24D93BBD91E94 /* AlimamaAgileVF-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ECE495CEBAA43E888B9517B /* AlimamaAgileVF-Thin.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -90,9 +92,11 @@
 		39B0517F2AFCD5980007234F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		39B051802AFCD5980007234F /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		39B051812AFCD5980007234F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		39BBE5392C37E14400A1FECA /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		39FDF50B2B03A74800D2C031 /* rnDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rnDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		39FDF50C2B03A74900D2C031 /* SwiftModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftModule.swift; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo.debug.xcconfig"; path = "Target Support Files/Pods-rnDemo/Pods-rnDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		52FB7731F9B0A9D2CA070DD9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = rnDemo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo.release.xcconfig"; path = "Target Support Files/Pods-rnDemo/Pods-rnDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnDemo-rnDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnDemo-rnDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-rnDemo-rnDemoTests/Pods-rnDemo-rnDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD2C529DF8D87542CA9FC17 /* Pods_rnDemo_rnDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rnDemo_rnDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +157,10 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				39BBE5392C37E14400A1FECA /* main.jsbundle */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				395F0E3F2B0357F000ED7E37 /* Bridge */,
+				52FB7731F9B0A9D2CA070DD9 /* PrivacyInfo.xcprivacy */,
 			);
 			name = rnDemo;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				39B0518A2AFCD5980007234F /* Foundation.ttf in Resources */,
 				39B051932AFCD5980007234F /* FontAwesome6_Brands.ttf in Resources */,
 				39B051842AFCD5980007234F /* Feather.ttf in Resources */,
+				39BBE53A2C37E14500A1FECA /* main.jsbundle in Resources */,
 				39B051922AFCD5980007234F /* SimpleLineIcons.ttf in Resources */,
 				39B051902AFCD5980007234F /* EvilIcons.ttf in Resources */,
 				39B051832AFCD5980007234F /* Octicons.ttf in Resources */,
@@ -415,6 +422,7 @@
 				39B051852AFCD5980007234F /* FontAwesome6_Regular.ttf in Resources */,
 				39B051942AFCD5980007234F /* MaterialIcons.ttf in Resources */,
 				455ED71118D24D93BBD91E94 /* AlimamaAgileVF-Thin.ttf in Resources */,
+				052094197DB73CFD82E48A4C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,8 +742,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -761,6 +770,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -787,8 +797,13 @@
 					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -814,6 +829,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -821,8 +837,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -848,6 +865,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -870,8 +888,13 @@
 					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -896,6 +919,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
