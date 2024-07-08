@@ -48,7 +48,7 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public ReactNativeHost getReactNativeHost() {
       var packagerConnectionSettings = new PackagerConnectionSettings(this);
-      packagerConnectionSettings.setDebugServerHost("10.32.24.4:5389");
+      packagerConnectionSettings.setDebugServerHost("192.168.0.101:8081");
       return mReactNativeHost;
   }
 
