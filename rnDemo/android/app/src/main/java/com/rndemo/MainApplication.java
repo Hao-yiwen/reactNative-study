@@ -7,6 +7,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactNativeHost;
+import com.facebook.react.packagerconnection.PackagerConnectionSettings;
 import com.facebook.soloader.SoLoader;
 import java.util.List;
 
@@ -46,7 +47,9 @@ public class MainApplication extends Application implements ReactApplication {
 
   @Override
   public ReactNativeHost getReactNativeHost() {
-    return mReactNativeHost;
+      var packagerConnectionSettings = new PackagerConnectionSettings(this);
+      packagerConnectionSettings.setDebugServerHost("10.32.24.4:5389");
+      return mReactNativeHost;
   }
 
   @Override

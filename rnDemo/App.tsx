@@ -24,6 +24,7 @@ import ComponentApiTest from '@src/View/ComponentApiTest';
 import Animated from '@src/View/Animated';
 import Measure from '@src/View/Measure';
 import FontFamilyPage from '@src/View/FontFamilyPage';
+import FastImage from '@src/View/FastImage';
 
 const Stack = createNativeStackNavigator();
 
@@ -74,6 +75,7 @@ function App() {
           <Stack.Screen name="Animated" component={Animated} options={{title: 'Animated'}} />
           <Stack.Screen name="Measure" component={Measure} options={{title: 'Measure'}} />
           <Stack.Screen name="FontFamilyPage" component={FontFamilyPage} options={{title: 'FontFamilyPage'}} />
+          <Stack.Screen name="FastImage" component={FastImage} options={{title: 'FastImage'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
