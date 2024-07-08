@@ -2,11 +2,20 @@
 import React, {useEffect} from 'react';
 import {Text, View, Button, ScrollView, Animated} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import FastImage from 'react-native-fast-image';
 
 const Home = ({navigation}: any) => {
   useEffect(() => {
     const isHermes = () => !!global.HermesInternal;
     console.log(isHermes());
+
+    // 预加载图片
+    FastImage.preload([
+      {
+        uri: 'https://unsplash.it/400/400?image=1',
+        headers: {Authorization: 'someAuthToken'},
+      },
+    ]);
   }, []);
 
   return (

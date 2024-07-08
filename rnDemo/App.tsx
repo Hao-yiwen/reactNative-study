@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import analytics from '@react-native-firebase/analytics';
@@ -25,12 +25,16 @@ import Animated from '@src/View/Animated';
 import Measure from '@src/View/Measure';
 import FontFamilyPage from '@src/View/FontFamilyPage';
 import FastImage from '@src/View/FastImage';
+import {StatusBar} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   const routeNameRef = React.useRef();
   const navigationRef = React.useRef();
+  useEffect(() => {
+    StatusBar.setBackgroundColor('white');
+  }, []);
   return (
     <Provider store={store}>
       <NavigationContainer
