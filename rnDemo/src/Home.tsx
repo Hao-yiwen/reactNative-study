@@ -203,6 +203,14 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
+        <View style={{marginTop: 20}}>
+          <Button
+            title="FastImage"
+            onPress={() => {
+              navigation.navigate('FastImage');
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
