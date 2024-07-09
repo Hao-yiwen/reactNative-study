@@ -32,7 +32,8 @@
     "react-native-video": "^5.2.1",
     "react-native-webview": "^13.6.2",
     "react-redux": "^8.1.3",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "third-module": "../third-module/third-module-0.0.1.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
