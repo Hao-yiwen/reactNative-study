@@ -7,4 +7,10 @@ module.exports = {
     },
   },
   assets: ['./assets/fonts'],
+  commands: [
+    {
+      name: 'foo-command',
+      func: () => console.log('It worked------'),
+    },
+  ],
 };
