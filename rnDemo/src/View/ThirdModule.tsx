@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Button, Alert} from 'react-native';
-import {multiply} from 'awesome-library';
+import {multiply} from 'third-module';
 
 export default class ThirdModule extends React.Component {
   async componentDidMount(): Promise<void> {
