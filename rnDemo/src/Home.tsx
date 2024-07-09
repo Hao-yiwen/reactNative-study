@@ -220,6 +220,14 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
+        <View style={{marginTop: 20}}>
+          <Button
+            title="ThirdModule"
+            onPress={() => {
+              navigation.navigate('ThirdModule');
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
