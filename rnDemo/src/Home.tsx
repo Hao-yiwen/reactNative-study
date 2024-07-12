@@ -25,6 +25,7 @@ const Home = ({navigation}: any) => {
         contentContainerStyle={{
           justifyContent: 'center',
           alignContent: 'center',
+          paddingBottom: 30,
         }}>
         <View style={{marginTop: 20}}>
           <Button
@@ -225,6 +226,22 @@ const Home = ({navigation}: any) => {
             title="ThirdModule"
             onPress={() => {
               navigation.navigate('ThirdModule');
+            }}
+          />
+        </View>
+        <View style={{marginTop: 20}}>
+          <Button
+            title="lodashPage"
+            onPress={() => {
+              navigation.navigate('LodashPage');
+            }}
+          />
+        </View>
+        <View style={{marginTop: 20}}>
+          <Button
+            title="AHooks"
+            onPress={() => {
+              navigation.navigate('AHooks');
             }}
           />
         </View>
