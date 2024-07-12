@@ -27,6 +27,8 @@ import FontFamilyPage from '@src/View/FontFamilyPage';
 import FastImage from '@src/View/FastImage';
 import {StatusBar} from 'react-native';
 import ThirdModule from './src/View/ThirdModule';
+import LodashPage from './src/View/LodashPage';
+import AHooks from './src/View/AHooks';
 
 const Stack = createNativeStackNavigator();
 
@@ -82,6 +84,8 @@ function App() {
           <Stack.Screen name="FontFamilyPage" component={FontFamilyPage} options={{title: 'FontFamilyPage'}} />
           <Stack.Screen name="FastImage" component={FastImage} options={{title: 'FastImage'}} />
           <Stack.Screen name="ThirdModule" component={ThirdModule} options={{title: 'ThirdModule'}} />
+          <Stack.Screen name="LodashPage" component={LodashPage} options={{title: 'LodashPage'}} />
+          <Stack.Screen name="AHooks" component={AHooks} options={{title: 'AHooks'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
