@@ -1,0 +1,428 @@
+{
+  "37": {
+    "appIdIOS": "com.ctrip.EBooking",
+    "appNameIOS": "IBUWireless.app",
+    "appIdAndroid": "ctrip.english.debug",
+    "appNameAndroid": "IBU_App.apk",
+    "linking": "ctripglobal://",
+    "activity": "com.ctrip.ibu.myctrip.main.module.home.IBUHomeActivity",
+    "appVersion": "7.73.0",
+    "rnVersion": "0.70.1",
+    "reactVersion": "18.1.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.73.0_ibu",
+    "packageVersion": {
+      "ios": "ios_7.73.0.zip",
+      "android": "android_7.73.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/IBU/",
+    "serverPackDir": "/crn/IBU"
+  },
+  "1001": {
+    "appIdIOS": "com.ctrip.vbooking",
+    "appNameIOS": "LvYouShangJia.app",
+    "appIdAndroid": "com.trip.vbooking",
+    "appNameAndroid": "LvYouShangJia.apk",
+    "activity": "com.example.vbookingk.activity.SplashActivity",
+    "linking": "vbooking",
+    "appVersion": "5.1.5",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.31_lvyou",
+    "packageVersion": {
+      "ios": "ios_5.1.5.zip",
+      "android": "android_5.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/lvyou/",
+    "serverPackDir": "/crn/lvyou"
+  },
+  "1002": {
+    "appIdIOS": "com.tieyou.ios.ticket99",
+    "appNameIOS": "Tieyou.app",
+    "appIdAndroid": "com.yipiao",
+    "appNameAndroid": "app-zhixing-release.apk",
+    "activity": "com.zt.main.entrance.ZTLaunchActivity",
+    "linking": "sy://suanya.cn",
+    "appVersion": "9.1.5",
+    "rnVersion": "0.59.0",
+    "reactVersion": "16.8.3",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.11_train",
+    "packageVersion": {
+      "ios": "ios_8.1.0.zip",
+      "android": "android_8.1.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/tieyou/",
+    "serverPackDir": "/crn/tieyou"
+  },
+  "1003": {
+    "appIdIOS": "cn.suanya.zhixingHC",
+    "appNameIOS": "Zhixing.app",
+    "appIdAndroid": "com.yipiao",
+    "appNameAndroid": "app-zhixing-debug.apk",
+    "appIdHarmony": "com.suanya.harmonynext",
+    "appNameHarmony": "zhixing_harmony.hap",
+    "ability": "PhoneAbility",
+    "activity": "com.zt.main.entrance.ZTLaunchActivity",
+    "linking": "sy://suanya.cn",
+    "appVersion": "9.6.8",
+    "rnVersion": "0.64.0",
+    "reactVersion": "17.0.1",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.35_train",
+    "packageVersion": {
+      "ios": "ios_9.6.8.zip",
+      "android": "android_9.6.3.zip",
+      "harmony": "harmony_10.6.6.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/train/",
+    "serverPackDir": "/crn/train"
+  },
+  "5010": {
+    "appIdIOS": "com.ctrip.ctripzuchetest",
+    "appNameIOS": "CTRIP_WIRELESS.app",
+    "appIdAndroid": "com.ctrip.izuche",
+    "appNameAndroid": "ctrip_ota_debug.apk",
+    "activity": "ctrip.business.splash.CtripSplashActivity",
+    "linking": "ctripizuche://wireless/",
+    "appVersion": "7.13",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.13_car",
+    "packageVersion": {
+      "ios": "ios_7.13.zip",
+      "android": "android_7.13.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/car/",
+    "serverPackDir": "/crn/car"
+  },
+  "5077": {
+    "appIdIOS": "com.ctrip.inner.oa",
+    "appNameIOS": "OA_App.app",
+    "appIdAndroid": "com.ctripframework.OAapp",
+    "appNameAndroid": "cchat_App.apk",
+    "linking": "trippal://wireless/",
+    "activity": "com.ctripframework.OAapp.activity.LaunchActivity",
+    "appVersion": "8.16",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.15_clr",
+    "packageVersion": {
+      "ios": "ios_8.16.zip",
+      "android": "android_8.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/chengliren/",
+    "serverPackDir": "/crn/chengliren"
+  },
+  "5107": {
+    "appIdIOS": "com.ctrip.b.welfare",
+    "appNameIOS": "XCT.app",
+    "appIdAndroid": "com.ctrip.b.welfare",
+    "appNameAndroid": "ctrip_welfare_android.apk",
+    "activity": "com.ctrip.b.welfare.SplashActivity",
+    "linking": "ctripxct://wireless/",
+    "appVersion": "2.5",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.34_welfare",
+    "packageVersion": {
+      "ios": "ios_2.5.zip",
+      "android": "android_2.5.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/welfare/",
+    "serverPackDir": "/crn/welfare"
+  },
+  "5109": {
+    "appIdIOS": "com.ctrip2.ebk.prd",
+    "appNameIOS": "EBookingiPhone.app",
+    "appIdAndroid": "com.Hotel.EBooking",
+    "appNameAndroid": "eBooking.apk",
+    "activity": "com.ctrip.ebooking.aphone.LauncherActivity",
+    "linking": "ctripebk://",
+    "appVersion": "4.19.0",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/2.7.0_ebooking",
+    "packageVersion": {
+      "ios": "ios_4.19.0.zip",
+      "android": "android_2.7.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/ebooking/",
+    "serverPackDir": "/crn/ebooking"
+  },
+  "5112": {
+    "appIdIOS": "com.ctrip.ct.company",
+    "appNameIOS": "CorpCompany.app",
+    "appIdAndroid": "com.ctrip.ct",
+    "appNameAndroid": "CorpTravel.apk",
+    "activity": "com.ctrip.ct.ui.activity.LaunchActivity",
+    "linking": "ctripcorpcompany://",
+    "appVersion": "7.90",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.15_ct",
+    "packageVersion": {
+      "ios": "ios_7.90.zip",
+      "android": "android_7.90.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/ct/",
+    "serverPackDir": "/crn/ct"
+  },
+  "5117": {
+    "appIdIOS": "com.ctrip.EbkBusiness",
+    "appNameIOS": "ebookingbu.app",
+    "appIdAndroid": "com.ctrip.ebkbusiness",
+    "appNameAndroid": "EbkBusiness.apk",
+    "activity": "ctrip.ebkbusiness.SplashActivity",
+    "linking": "ctripebbiz://",
+    "appVersion": "8.20",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.20_ebooking_bu",
+    "packageVersion": {
+      "ios": "ios_8.20.zip",
+      "android": "android_7.14.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/ebooking_bu/",
+    "serverPackDir": "/crn/ebooking_bu"
+  },
+  "5118": {
+    "appIdIOS": "com.trj.driver",
+    "appNameIOS": "TRJDriver.app",
+    "appIdAndroid": "com.ctrip.ebkbusiness",
+    "appNameAndroid": "ctrip_ebkbusiness.apk",
+    "activity": "ctrip.ebkbusiness.SplashActivity",
+    "linking": "ctriptrj://",
+    "appVersion": "7.15",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.15_driver",
+    "packageVersion": {
+      "ios": "ios_7.15.zip",
+      "android": "android_7.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/driver/",
+    "serverPackDir": "/crn/driver"
+  },
+  "5123": {
+    "appIdIOS": "com.tieyou.bus.sfcDriver",
+    "appNameIOS": "sfcDriver.app",
+    "appIdAndroid": "com.ctrip.ebkbusiness",
+    "appNameAndroid": "ctrip_ebkbusiness.apk",
+    "activity": "ctrip.ebkbusiness.SplashActivity",
+    "linking": "ytsfcdriver://",
+    "appVersion": "7.15",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.15_sfcDriver",
+    "packageVersion": {
+      "ios": "ios_7.15.zip",
+      "android": "android_7.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/sfcDriver/",
+    "serverPackDir": "/crn/sfcDriver"
+  },
+  "5124": {
+    "appIdIOS": "com.tieyou.bus.sfcClient",
+    "appNameIOS": "sfcClient.app",
+    "appIdAndroid": "com.ctrip.ebkbusiness",
+    "appNameAndroid": "ctrip_ebkbusiness.apk",
+    "activity": "ctrip.ebkbusiness.SplashActivity",
+    "linking": "tysfcclient://",
+    "appVersion": "7.15",
+    "rnVersion": "0.51.0",
+    "reactVersion": "16.0.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/7.15_sfcClient",
+    "packageVersion": {
+      "ios": "ios_7.15.zip",
+      "android": "android_7.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/sfcClient/",
+    "serverPackDir": "/crn/sfcClient"
+  },
+  "5156": {
+    "appIdIOS": "com.ios.innovationpub",
+    "appNameIOS": "InnovationPub.app",
+    "appIdAndroid": "ctrip.android.innovationpub",
+    "appNameAndroid": "InnovationPub.apk",
+    "linking": "ctripipub://",
+    "activity": "ctrip.base.SplashActivity",
+    "appVersion": "8.3.2",
+    "rnVersion": "0.59.0",
+    "reactVersion": "16.8.3",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.3.2_InnovationPub",
+    "packageVersion": {
+      "ios": "ios_8.3.2.zip",
+      "android": "android_8.3.2.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/InnovationPub/",
+    "serverPackDir": "/crn/InnovationPub"
+  },
+  "5162": {
+    "appIdIOS": "com.ctrip.DLTiPhone",
+    "appNameIOS": "DLTiPhone.app",
+    "appIdAndroid": "com.hotel.ctrip.dltandroid",
+    "appNameAndroid": "DltAndroid.apk",
+    "linking": "ctripdlt://",
+    "activity": "ctrip.base.SplashActivity",
+    "appVersion": "8.7",
+    "rnVersion": "0.59.0",
+    "reactVersion": "16.8.3",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.7_dlt",
+    "packageVersion": {
+      "ios": "ios_8.7.zip",
+      "android": "android_3.0.0.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/dlt/",
+    "serverPackDir": "/crn/dlt"
+  },
+  "5174": {
+    "appIdIOS": "com.tujia.tujia",
+    "appNameIOS": "TuJia.app",
+    "appIdAndroid": "com.tujia.hotel",
+    "appNameAndroid": "tujia.apk",
+    "linking": "tujia://",
+    "activity": "com.tujia.hotel.main.StartActivity",
+    "appVersion": "8.15",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://gitlab.corp.tujia.com/crn/crn.git#rel/8.15_tujia",
+    "packageVersion": {
+      "ios": "ios_8.15.zip",
+      "android": "android_8.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/tujia/",
+    "serverPackDir": "/crn/tujia"
+  },
+  "5179": {
+    "appIdIOS": "com.mayi",
+    "appNameIOS": "MaYi.app",
+    "appIdAndroid": "com.mayi.android.shortrent",
+    "appNameAndroid": "mayi.apk",
+    "linking": "tujia://",
+    "activity": "com.tujia.hotel.main.StartActivity",
+    "appVersion": "8.15",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://gitlab.corp.tujia.com/crn/crn.git#rel/8.15_tujia",
+    "packageVersion": {
+      "ios": "ios_8.15.zip",
+      "android": "android_8.15.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/ant/",
+    "serverPackDir": "/crn/tujia"
+  },
+  "5188": {
+    "appIdIOS": "ctrip.com",
+    "appNameIOS": "izuche.app",
+    "appIdAndroid": "android.bookingcar.zuchebao",
+    "appNameAndroid": "ZuCheBao.apk",
+    "linking": "czuchebao://",
+    "activity": "android.bookingcar.ctrip.driver.activity.CarMainActivity",
+    "appVersion": "8.20",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.20_zcb",
+    "packageVersion": {
+      "ios": "ios_8.20.zip",
+      "android": "android_8.20.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/zcb/",
+    "serverPackDir": "/crn/zcb"
+  },
+  "5193": {
+    "appIdIOS": "com.ctrip.jr",
+    "appNameIOS": "CtripFinance.app",
+    "appIdAndroid": "com.ctrip.jr",
+    "appNameAndroid": "ctripfinance.apk",
+    "linking": "CtripFinancephone://",
+    "activity": "com.mqunar.splash.SplashActivity",
+    "appVersion": "8.22",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.22_finance",
+    "packageVersion": {
+      "ios": "ios_8.22.zip",
+      "android": "android_8.22.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/finance/",
+    "serverPackDir": "/crn/finance"
+  },
+  "5200": {
+    "appIdIOS": "com.daodao.app",
+    "appNameIOS": "Tripadvisor.app",
+    "appIdAndroid": "com.tripadvisor.tripadvisor.daodao.debug",
+    "appNameAndroid": "DDMobileApp.apk",
+    "linking": "tripadvisor://wireless/",
+    "activity": "com.tripadvisor.tripadvisor.daodao.launch.TripAdvisorDaoDaoActivity",
+    "appVersion": "8.26",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.26_tachina",
+    "packageVersion": {
+      "ios": "ios_8.26.0.zip",
+      "android": "android_8.26.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/tachina/",
+    "serverPackDir": "/crn/tachina"
+  },
+  "5243": {
+    "appIdIOS": "com.trip.broadcasters",
+    "appNameIOS": "Broadcasters.app",
+    "appIdAndroid": "com.trip.broadcasters",
+    "appNameAndroid": "Broadcasters.apk",
+    "linking": "",
+    "activity": "com.trip.broadcasters.base.SplashActivity",
+    "appVersion": "1.2.2",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.33_broadcaster",
+    "packageVersion": {
+      "ios": "ios_1.0.0.zip",
+      "android": "android_1.1.2.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/broadcaster/",
+    "serverPackDir": "/crn/broadcaster"
+  },
+  "5250": {
+    "appIdIOS": "",
+    "appNameIOS": "",
+    "appIdAndroid": "com.ctrip.tvm",
+    "appNameAndroid": "ctrip_tvm_debug.apk",
+    "linking": "",
+    "activity": "com.ctrip.tvm.activity.ContainerActivity",
+    "appVersion": "3.4.3",
+    "rnVersion": "0.61.2",
+    "reactVersion": "16.9.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.34_qpj",
+    "packageVersion": {
+      "ios": "",
+      "android": "android_3.4.3.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/tvm/",
+    "serverPackDir": "/crn/tvm"
+  },
+  "99999999": {
+    "appIdIOS": "ctrip.com",
+    "appNameIOS": "CTRIP_WIRELESS.app",
+    "appIdAndroid": "ctrip.android.view",
+    "appNameAndroid": "ctrip_android.apk",
+    "appIdHarmony": "com.ctrip.harmonynext",
+    "appNameHarmony": "ctrip_harmony.hap",
+    "ability": "CTEntryAbility",
+    "linking": "ctrip://wireless/",
+    "activity": "ctrip.business.splash.CtripSplashActivity",
+    "appVersion": "8.68.6",
+    "rnVersion": "0.72.5",
+    "reactVersion": "18.2.0",
+    "crnRepository": "git+http://git.dev.sh.ctripcorp.com/crn/crn.git#rel/8.68.6",
+    "packageVersion": {
+      "ios": "ios_8.68.6.zip",
+      "android": "android_8.68.6.zip",
+      "harmony": "harmony_8.68.6.zip"
+    },
+    "packageDir": "http://download2.ctripcorp.com/ahLNpUps/crn/",
+    "serverPackDir": "/crn"
+  },
+  "cli": {
+    "allowUpdate": false,
+    "version": "2.4.13"
+  }
+}

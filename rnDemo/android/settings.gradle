@@ -2,3 +2,7 @@ rootProject.name = 'rnDemo'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+// https://github.com/invertase/react-native-firebase/issues/2149
+// todo: why some times have this question: because npm registry is error
+//include ':@react-native-firebase_app'
+//project(':@react-native-firebase_app').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/app/android')
