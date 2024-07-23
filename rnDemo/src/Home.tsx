@@ -245,6 +245,14 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
+        <View style={{marginTop: 20}}>
+          <Button
+            title="TextRTL"
+            onPress={() => {
+              navigation.navigate('TextRTL');
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
