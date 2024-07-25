@@ -1,6 +1,6 @@
 // HomePage
 import React, {useEffect} from 'react';
-import {Text, View, Button, ScrollView, Animated} from 'react-native';
+import {Text, View, Button, ScrollView, Animated, TouchableOpacity} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import FastImage from 'react-native-fast-image';
 
@@ -43,7 +43,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="点击取值"
@@ -54,7 +53,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Sqlite"
@@ -63,7 +61,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Rematch"
@@ -72,7 +69,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Style"
@@ -81,7 +77,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Lottie"
@@ -90,7 +85,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Image"
@@ -99,7 +93,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Carousel"
@@ -108,7 +101,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Animate"
@@ -117,7 +109,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到Timer"
@@ -126,7 +117,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到NativeModules"
@@ -135,7 +125,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到MapView"
@@ -144,7 +133,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到DatePicker"
@@ -153,7 +141,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="跳转到SwiftModule"
@@ -162,7 +149,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="0725不同页面scrollview相互干扰测试"
@@ -171,7 +157,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="AnimatedScrollview"
@@ -180,7 +165,6 @@ const Home = ({navigation}: any) => {
             }}
           />
         </View>
-
         <View style={{marginTop: 20}}>
           <Button
             title="ComponentApiTest"
@@ -252,6 +236,30 @@ const Home = ({navigation}: any) => {
               navigation.navigate('TextRTL');
             }}
           />
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('FiberTest');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>FiberTest</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('CustomAnimation');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>CustomAnimation</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('JSTimersTest');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>JSTimersTest</Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </View>

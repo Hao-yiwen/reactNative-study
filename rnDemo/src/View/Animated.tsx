@@ -20,10 +20,11 @@ class Booking extends Component {
   };
 
   moveView = () => {
+    debugger;
     Animated.timing(this.animatedValue, {
       toValue: 1,
       duration: 5000,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   };
 

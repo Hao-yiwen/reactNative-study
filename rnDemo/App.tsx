@@ -30,6 +30,9 @@ import ThirdModule from './src/View/ThirdModule';
 import LodashPage from './src/View/LodashPage';
 import AHooks from './src/View/AHooks';
 import TextRTL from './src/View/TextRTL';
+import FiberTest from './src/View/FiberTest';
+import CustomAnimation from './src/View/CustomAnimation';
+import JSTimersTest from './src/View/JSTimersTest';
 
 const Stack = createNativeStackNavigator();
 
@@ -88,6 +91,9 @@ function App() {
           <Stack.Screen name="LodashPage" component={LodashPage} options={{title: 'LodashPage'}} />
           <Stack.Screen name="AHooks" component={AHooks} options={{title: 'AHooks'}} />
           <Stack.Screen name="TextRTL" component={TextRTL} options={{title: 'TextRTL'}} />
+          <Stack.Screen name="FiberTest" component={FiberTest} options={{title: 'FirberTest'}} />
+          <Stack.Screen name="CustomAnimation" component={CustomAnimation} options={{title: 'CustomAnimation'}} />
+          <Stack.Screen name="JSTimersTest" component={JSTimersTest} options={{title: 'JSTimersTest'}} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
