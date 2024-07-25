@@ -36,6 +36,7 @@ export default ({navigation}: any) => {
     });
   }, []);
 
+  debugger;
   return (
     <View>
       <Text>Page2</Text>
