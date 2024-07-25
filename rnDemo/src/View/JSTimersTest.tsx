@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useMemo, useRef} from 'react';
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   LayoutAnimation,
   UIManager,
   Animated,
+  useAnimatedValue,
 } from 'react-native';
 
 // react-native:
@@ -23,10 +24,14 @@ UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationE
 
 const SlowExample = () => {
   const [state, setState] = React.useState({w: 200, h: 200});
-  const animate1 = new Animated.Value(0);
-  const animate2 = new Animated.Value(0);
+  const animate1 = useAnimatedValue(0);
+  const animate2 = useMemo(() => new Animated.Value(0), []);
+  const ref = useRef(null);
+
+  console.log('render: =========> SlowExample');
 
   useEffect(() => {
+    console.log('useEffect: ' + performance.now());
     Animated.timing(animate1, {
       toValue: 100,
       duration: 1000,
@@ -61,7 +66,11 @@ const SlowExample = () => {
     });
 
     console.log('Scheduled both callbacks after heavy task' + performance.now());
-  }, []);
+  }, [animate1, animate2]);
+
+  useEffect(() => {
+    console.log('useEffect2: ' + performance.now());
+  }, [state.h]);
 
   const _onPress = () => {
     console.log('Button pressed' + performance.now());
@@ -70,7 +79,8 @@ const SlowExample = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View>
+      <Test />
       <Animated.View
         style={{width: 50, height: 50, backgroundColor: 'yellow', transform: [{translateX: animate1}]}}></Animated.View>
       <Animated.View
@@ -81,6 +91,15 @@ const SlowExample = () => {
           <Text style={styles.buttonText}>Press me!</Text>
         </View>
       </TouchableOpacity>
+    </View>
+  );
+};
+
+const Test = props => {
+  console.log('render: =========> Test');
+  return (
+    <View>
+      <Text>Test</Text>
     </View>
   );
 };
@@ -108,4 +127,14 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SlowExample;
+const App = () => {
+  console.log('render: =========> App');
+  return (
+    <View style={styles.container}>
+      <Text>SlowExample</Text>
+      <SlowExample />
+    </View>
+  );
+};
+
+export default App;
