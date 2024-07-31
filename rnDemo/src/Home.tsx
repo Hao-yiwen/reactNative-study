@@ -1,6 +1,6 @@
 // HomePage
 import React, {useEffect} from 'react';
-import {Text, View, Button, ScrollView, Animated, TouchableOpacity} from 'react-native';
+import {Text, View, Button, ScrollView, Animated, TouchableOpacity, I18nManager} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import FastImage from 'react-native-fast-image';
 
@@ -16,6 +16,10 @@ const Home = ({navigation}: any) => {
         headers: {Authorization: 'someAuthToken'},
       },
     ]);
+  }, []);
+
+  useEffect(() => {
+    // 强制启用 RTL 布局
   }, []);
 
   return (
@@ -259,6 +263,46 @@ const Home = ({navigation}: any) => {
               navigation.navigate('JSTimersTest');
             }}>
             <Text style={{fontWeight: '700', fontSize: 20}}>JSTimersTest</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('FlushListPage');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>FlushListPage</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('FlatListPage');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>FlatListPage</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('RTLText');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>RTLText</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('GestureScrollview');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>GestureScrollview</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('ImageTestPage');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>ImageTestPage</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
