@@ -19,7 +19,8 @@ const Home = ({navigation}: any) => {
   }, []);
 
   useEffect(() => {
-    // 强制启用 RTL 布局
+    // 强制关闭 RTL 布局
+    I18nManager.forceRTL(false);
   }, []);
 
   return (
@@ -303,6 +304,14 @@ const Home = ({navigation}: any) => {
               navigation.navigate('ImageTestPage');
             }}>
             <Text style={{fontWeight: '700', fontSize: 20}}>ImageTestPage</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={{marginTop: 20, alignItems: 'center'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('TextMeasure');
+            }}>
+            <Text style={{fontWeight: '700', fontSize: 20}}>TextMeasure</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

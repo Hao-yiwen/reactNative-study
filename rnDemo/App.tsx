@@ -39,6 +39,7 @@ import RTLText from './src/View/RTLText';
 import GestureScrollview from './src/View/GestureScrollview';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import ImageTestPage from './src/View/ImagetTestPage';
+import TextMeasure from './src/View/TextMeasure';
 
 const Stack = createNativeStackNavigator();
 
@@ -110,6 +111,7 @@ function App() {
               options={{title: 'GestureScrollview'}}
             />
             <Stack.Screen name="ImageTestPage" component={ImageTestPage} options={{title: 'ImageTestPage'}} />
+            <Stack.Screen name="TextMeasure" component={TextMeasure} options={{title: 'TextMeasure'}} />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>
